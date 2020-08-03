@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입페이지</title>
+    <link rel="stylesheet" href="css/register.css" type="text/css"></head>
+</head>
+<body>
+    <form method="POST" class="join-wrapper">
+        <table id="member_table">
+                <tr>
+                    <th scope="row">
+                            이름
+                    </th>
+                    <td><input type="text" class="text" name="username" id="username"></td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                            생년월일
+                    </th>
+                    <td><input type="text" class="text" name="ssn1" id="ssn1" maxlength="6" placeholder="6자리만 입력해주세요."></td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                            휴대폰 번호
+                    </th>
+                    <td><input type="text" class="text" name="hp" id="hp"></td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label>아이디</label>
+                    </th>
+                    <td>
+                        <input type="text" class="text" name="userid" id="userid" maxlength="12" placeholder="영문, 숫자 조합(8~12자)">
+                        <button type="button" class="btnGray">중복확인</button>
+                        <div class="alert" class="id">
+                                아이디는 영문, 숫자 조합 8자리 이상 12자리 이하 입니다.
+                        </div>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label>비밀번호</label>
+                    </th>
+                    <td>
+                        <input type="password" class="text" name="userpw" id="userpw" maxlength="16" placeholder="영문,숫자,특수기호 중 2가지 이상 조합">
+                        <div class="alert">
+                                비밀번호는 영문,숫자,특수기호 중 2가지 이상 조합하여 10자리 이상 16자리 이하입니다.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label>비밀번호 확인</label>
+                    </th>
+                    <td>
+                        <input type="password" class="text" name="userpw_re" id="userpw_re" maxlength="16" placeholder="영문,숫자,특수기호 중 2가지 이상 조합">
+                        <div class="alert">
+                                비밀번호는 영문,숫자,특수기호 중 2가지 이상 조합하여 10자리 이상 16자리 이하입니다.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                            이메일 주소
+                    </th>
+                    <td>
+                        <input type="text" class="text" name="email" id="email" maxlength="50" placeholder="이메일주소를 입력해 주세요">
+                        <div class="alert">
+                            올바른 이메일 형식으로 입력해주세요.
+                        </div>
+                    </td>
+                </tr>
+    
+        </table>
+    <div class="join-btn-wrapper">
+        <input type="submit" class="join-btn" value="회원가입">
+    </div>
+    </form>
+</body>
+</html>

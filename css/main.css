@@ -1,0 +1,150 @@
+/*
+48
+40
+30
+24
+18
+#646464 : 검정
+#D5D5D5 : 옅 회색
+#DC736D : 핑크
+#64B3D7 : 하늘
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #646464;
+}
+
+/* 썸네일 영역 */
+.main-thumnail{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    background-image: url(/Users/jina/git/sportsclub/img/basketball.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-thumnail-text-wrapper{
+    height: 100%;
+    margin: 0 300px;
+    color: white;
+    text-align: center;
+}
+.main-thumnail-text{
+    /* color: ; */
+    font-weight: bold;
+    font-size: 40px;
+    padding: 220px 0;
+
+}
+/* 사이트 요약 한 줄*/
+.main-oneline-wrapper{
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    padding: 32px 0;
+    box-sizing: border-box;
+}
+.main-oneline{
+    font-size: 24px;
+}
+/*경기 리스트*/
+
+/* 동아리 리스트*/
+.game-list{
+    width: 100%;
+    height: 100%;
+    padding: 16px 0;
+
+}
+.game-list-wrapper{
+    margin: 0 300px;
+}
+#game
+ {
+    display:inline-block;
+    box-sizing: border-box;
+    margin-right: 25px;
+    background-color: #fff;
+    width: 30%; 
+    height: 450px;
+    position: relative; 
+    border-radius: 12px;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+    border-radius: 4px;
+
+    margin: 10px;
+}
+.game-list{
+    width: 100%;
+    height: 100%;
+    padding: 16px 0;
+}
+
+
+
+.game-thum{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    border-radius: 17px 17px 0 0;
+    background-color: #DC736D;
+}
+.show-more{
+    float: right;
+    
+}
+/*가입 권유*/
+.invite-join{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 100px 0;
+}
+.invite-join ::before{
+    display: inline-block;
+    content: "";
+    height: 100%;
+    vertical-align: middle;
+}
+.invite-join-text-wrapper{
+    text-align: center;
+    margin: 0 300px;
+}
+.subtitle-text{
+    font-size: 24px;
+    margin: 8px 0;
+    font-weight: bold;
+}
+.detail-text{
+    margin: 8px 0;
+    font-size: 18px;
+}
+.join-btn-wrapper{
+    margin: 0 300px;
+    text-align: center;
+}
+.join-btn{
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+    font-size: 18px;
+    border: 1px solid #D5D5D5;
+    border-radius: 70px;
+    background-color: white;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+.join-btn:hover{
+    background-color: #DC736D;
+    border: 1px solid #DC736D;
+    color: white;
+}

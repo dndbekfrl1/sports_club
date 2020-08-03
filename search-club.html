@@ -1,0 +1,76 @@
+<!--
+https://codepen.io/wallaceerick/pen/ctsCz
+select css 참고
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아리 검색</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/search-club.css">
+</head>
+<body>
+    <header>
+        <div class="tab-wrapper">
+            <ul class="tab">
+                <a href="#"><li class="header menu"id="menu">메뉴</li></a>
+                <a href="#"><li class="header game-search"id="game-search">경기 검색</li></a>
+                <a href="search-club.html"><li class="header search-club">동아리 검색</li></a>
+                <a href="main.html"><li id="title" class="header header-title">타이틀</li></a>
+                <a href="register.html"><li id="join" class="header join">회원가입</li></a>
+                <a href="#"><li id="tab-login" class="header tab-login">로그인<li></a>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="main-thumnail">
+            <div class="main-thumnail-text-wrapper">
+                <div class="main-thumnail-text">동아리를 구하세요!</div>
+            </div>
+        </div>
+    </section>
+    <!-- 검색 탭 -->
+    <section title="search-club">
+        <div class="search-tab-wrapper">
+            <div class="club-search-tab">
+                <select id="location">
+                    <option value="hide">시/군/구</option>
+                    <option value="">sample</option>
+                    <option value="">sample</option>
+                </select>
+                <select id="sports-kind">
+                    <option value="hide">종목</option>
+                    <option value="">sample</option>
+                    <option value="">sample</option>
+                </select>
+                <button value="검색">검색</button>
+            </div>
+        </div>
+    </section>
+    <!-- 동아리 리스트 -->
+    <section class="club-list">
+        <div class="club-list-wrapper">
+            <div id="club">
+                <div class="club-thum"></div>
+                <div class="club-info">
+                    <div class="33">
+                        <div class="club-title">동아리명</div>
+                        <div class="usr-id">clubownerid</div>
+                    </div>  
+                    <div class="sports-kind">주 종목: 축구</div>
+                    <div class="club-text" style="overflow: hidden; height: 80px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tempora facere beatae veritatis tempore omnis exercitationem temporibus est, dolor ad esse asperiores laborum inventore atque voluptate vero a expedita numquam.</div>
+                 
+                        <button class="club-join-btn">자세히 보기</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #646464;
+}
+
+section{
+    margin: 0 300px;
+}
+
+.club-thum{
+    width: 100%;
+    height: 200px;
+    background-image: url(/Users/jina/git/sportsclub/img/cott.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.club-title{
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+}
+.user-info-wrapper{
+}
+.user-photo{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    background-color: #646464;
+}
+.club-owner{
+    font-size: 24px;
+    display: inline-block;
+}
+
+.card
+ {
+    display:inline-block;
+    box-sizing: border-box;
+    margin-right: 25px;
+    background-color: #fff;
+    width: 30%; 
+    height: 300px;
+    position: relative; 
+    border-radius: 12px;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+    border-radius: 4px;
+
+    margin: 10px;
+  }
+
+  .club-join-btn{
+    background-color: white;
+    border: 1px solid #646464;
+    color: #646464;
+    padding: 6px 20px;
+    border-radius: 8px;
+    
+    cursor: pointer;
+}
