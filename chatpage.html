@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>chat</title>
+    <style type="text/css">
+      *{
+        	box-sizing:border-box;
+        }
+
+        #container{
+        	width:750px;
+        	height:700px;
+        	background:#FFFFFF;
+        	margin:0 auto;
+        	font-size:0;
+        	border-radius:5px;
+        	overflow:hidden;
+        }
+        aside{
+        	width:260px;
+        	height:700px;
+        	background-color:#55ddff;
+        	display:inline-block;
+        	font-size:15px;
+        	vertical-align:top;
+        }
+        main{
+        	width:490px;
+        	height:700px;
+        	display:inline-block;
+        	font-size:15px;
+        	vertical-align:top;
+        }
+
+        aside ul {
+          /*스크롤바*/
+        	padding-left:0;
+        	margin:0;
+        	list-style-type:none;
+        	overflow-y:scroll;
+        	height:700px;
+        }
+        aside li{
+        	padding:10px 0;
+        }
+        aside li:hover{
+          /*마우스 올렸을 때 변하는색*/
+          background-color: #fff;
+        }
+        h2,h3{
+        	margin:0;
+        }
+        aside li img{
+        	border-radius:50%;
+          width: 50px;
+        	margin-left:20px;
+        	margin-right:8px;
+        }
+        aside li div{
+        	display:inline-block;
+        	vertical-align:top;
+        	margin-top:12px;
+        }
+        aside li h2{
+        	font-size:14px;
+        	color:#fff;
+        	font-weight:normal;
+        	margin-bottom:5px;
+        }
+        aside li h3{
+        	font-size:12px;
+        	color:#7e818a;
+        	font-weight:normal;
+        }
+
+        .status{
+        	width:8px;
+        	height:8px;
+        	border-radius:50%;
+        	display:inline-block;
+        	margin-right:7px;
+        }
+        .green{
+        	background-color:#58b666;
+        }
+        .orange{
+        	background-color:#ff725d;
+        }
+        .blue{
+        	background-color:#6fbced;
+        	margin-right:0;
+        	margin-left:7px;
+        }
+
+        main header{
+          background-color:#D5D5D5;
+        	height:80px;
+        	padding:20px 20px 30px 40px;
+        }
+        main header > *{
+        	display:inline-block;
+        	vertical-align:top;
+        }
+        main header img {
+          witdth:50px;
+        	border-radius:50%;
+        }
+
+        main header div{
+        	margin-left:10px;
+        	margin-right:145px;
+        }
+        main header h2{
+        	font-size:16px;
+        	margin-bottom:5px;
+        }
+        main header h3{
+        	font-size:14px;
+        	font-weight:normal;
+        	color:#7e818a;
+        }
+
+        .notice {
+          height: 50px;
+          font-size: 15px;
+          margin-top: 10px;
+          margin-left: 30px;
+          border-bottom: 1px solid;
+        }
+        .btn_notice {
+          float: right;
+          position: absolute;
+        }
+
+        .map {
+          height: 130px;
+          margin-top: 10px;
+          margin-left:30px;
+          border-bottom: 1px solid;
+        }
+
+        #chat{
+        	padding-left:0;
+        	margin:0;
+        	list-style-type:none;
+        	overflow-y:scroll;
+        	height:280px;
+        	border-top:2px solid #fff;
+        	border-bottom:2px solid #fff;
+        }
+        #chat li{
+        	padding:10px 30px;
+        }
+        #chat h2,#chat h3{
+        	display:inline-block;
+        	font-size:12px;
+        	font-weight:normal;
+        }
+        #chat h3{
+        	color:#bbb;
+        }
+        #chat .entete{
+        	margin-bottom:5px;
+        }
+        #chat .message{
+        	padding:10px;
+        	color:#161c30;
+        	line-height:25px;
+        	max-width:90%;
+        	display:inline-block;
+        	text-align:left;
+        	border-radius:5px;
+        }
+        #chat .me{
+        	text-align:right;
+        }
+        #chat .you .message{
+        	background-color:#EDF0F5;
+        }
+        #chat .me .message{
+        	background-color:#6fbced;
+        }
+        #chat .triangle{
+        	width: 0;
+        	height: 0;
+        	border-style: solid;
+        	border-width: 0 10px 10px 10px;
+        }
+        #chat .you .triangle{
+        		border-color: transparent transparent #EDF0F5 transparent;
+        		margin-left:15px;
+        }
+        #chat .me .triangle{
+        		border-color: transparent transparent #6fbced transparent;
+        		margin-left:375px;
+        }
+
+        main footer{
+        	height:130px;
+        	padding:20px 30px 10px 20px;
+        }
+        main footer textarea{
+        	resize:none;
+        	border:none;
+        	display:block;
+        	width:100%;
+        	height:80px;
+        	border-radius:3px;
+        	padding:20px;
+        	font-size:13px;
+        	margin-bottom:13px;
+        }
+        main footer textarea::placeholder{
+        	color:#ddd;
+        }
+        main footer a {
+        	text-decoration:none;
+        	text-transform:uppercase;
+        	font-weight:bold;
+        	color:#6fbced;
+        	vertical-align:top;
+          margin-left:395px;
+        	margin-top:5px;
+        	display:inline-block;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+  	<aside>
+  		<ul>
+			<li>
+				<img src="man1.png" alt="">
+				<div>
+					<h2>축구톡방/A구장/ ...</h2>
+					<h3>
+						<span class="status orange"></span>
+						offline
+					</h3>
+				</div>
+			</li>
+			<li>
+				<img src="man1.png" alt="">
+				<div>
+					<h2>사람1</h2>
+					<h3>
+						<span class="status green"></span>
+						online
+					</h3>
+				</div>
+			</li>
+  		</ul>
+  	</aside>
+  	<main>
+      <header>
+  			<img src="" alt="">
+  			<div>
+  				<h2>축구 톡방</h2>
+  				<h3>방장: 신짱구</h3>
+  			</div>
+  			<img src="" alt="">
+  		</header>
+
+      <div class="notice">
+        <div class="noticetext">공지사항: 00시 00분 A 구장 ...</div>
+        <button type="button" class="btn_notice">접기</button>
+      </div>
+
+      <div class="map"> 지도 영역</div>
+
+  		<ul id="chat">
+  			<li class="you">
+  				<div class="entete">
+  					<span class="status green"></span>
+  					<h2>축구 톡방장 신짱구</h2>
+  					<h3>10:12AM, Today</h3>
+  				</div>
+  				<div class="triangle"></div>
+  				<div class="message">
+  					3시까지 뚝섬 한강공원으로 오시면 됩니다
+  				</div>
+  			</li>
+  			<li class="me">
+  				<div class="entete">
+  					<h3>10:12AM, Today</h3>
+  					<h2>me</h2>
+  					<span class="status blue"></span>
+  				</div>
+  				<div class="triangle"></div>
+  				<div class="message">
+  					아아아아아ㅏ 네네네ㅔ네네ㅔ
+  				</div>
+  			</li>
+  			<li class="me">
+  				<div class="entete">
+  					<h3>10:12AM, Today</h3>
+  					<h2>me</h2>
+  					<span class="status blue"></span>
+  				</div>
+  				<div class="triangle"></div>
+  				<div class="message">
+  					알겠습니다~
+  				</div>
+  			</li>
+  		</ul>
+
+  		<footer>
+  			<textarea placeholder="Type your message"></textarea>
+  			<a href="#">Send</a>
+  		</footer>
+  	</main>
+    </div>
+  </body>
+</html>
