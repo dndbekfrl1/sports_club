@@ -142,50 +142,57 @@ header {
   font-size:40px;
   position: absolute;
 }
-ul{list-style:none;}
-.tabmenu{
+.tab{
   top: 1130px;
   left: 200px;
   width: 1144px;
-  position:absolute;
+  height:auto;
+  overflow:hidden;
+  position: absolute;
 }
-.tabmenu ul li{
-  display:  inline-block;
-  width: 1144px;
+.tab ul{
+  padding:0;
+  margin:0;
+  list-style:none;
+  width:100%:
+  height:auto;
+  overflow:hidden;
+}
+.tab ul li{
+  display:inline-block;
+  width:562px;
+  float:left;
+  line-height:40px;
+  border: 3px solid #FFFFFF;
   text-align:center;
-  background :#f9f9f9;
-  line-height:40px;
+  cursor:pointer;
 }
-.tabmenu ul li a{
-  display:block;
-  line-height:40px;
-  width: 1144px;
-  height:40px;
-  text-decoration:none;
-  color: #000;
-  font: Bold
+.tab ul li:hover,
+.tab ul li.on{
+  background:#ED6F76;
 }
-.tabCon{
+.tab .conBox{
+  padding: 10px 10px 10px 10px;
+  width:100%;
+  height:auto;
+  overflow:hidden;
+  min-height:200px;
+  background:#fff;
   display:none;
-  box-sizing: border-box;
-  border : 5px solid #f9f9f9;
+  text-align:center;
 }
-.btnCon:target  {
-  background : #FF8383;
-}
-.btnCon:target .tabCon{
-  background : #ccc;
-  display: block;
+.tab .conBox.on{
+  display:block;
 }
 
 .myclubtext {/*내 동아리 글자 */
-  top: 1360px;
+  top: 1380px;
   left: 200px;
   font-size:40px;
   position: absolute;
 }
 .myclub { /*동아리 목록*/
-  top: 1420px;
+  top: 1440px;
   left: 200px;
   width: 1144px;
   height: 350px;
