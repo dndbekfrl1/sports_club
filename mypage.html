@@ -9,7 +9,16 @@
   <body>
     <script src="js/mypage.js"></script>
     <header>
-      헤더 영역
+       <div class="tab-wrapper">
+           <ul class="tab">
+               <a href="#"><li class="header menu"id="menu">메뉴</li></a>
+               <a href="#"><li class="header game-search"id="game-search">경기 검색</li></a>
+               <a href="search-club.html"><li class="header search-club">동아리 검색</li></a>
+               <a href="main.html"><li id="title" class="header header-title">타이틀</li></a>
+               <a href="register.html"><li id="join" class="header join">회원가입</li></a>
+               <a href="#"><li id="tab-login" class="header tab-login">로그인<li></a>
+           </ul>
+       </div>
     </header>
     <div class="background_me_sq"></div>
     <div class="background_me_oval">
@@ -20,30 +29,10 @@
         <button class="btn_me" type="button">수정하기</button>
     </div>
 
-    <div class="frequest_text">친구요청</div>
-    <div class="frequestbox">
-      <ul id=frequests>
-        받은 친구 요청이 없습니다
-      </ul>
-    </div>
-
-    <div class="friendtext">친구목록</div>
-    <button class="morefriend" type="button">전체보기</button>
-    <div class="friendbox">
-      <ul id="friends">
-        <li class="f1">
-          <img src="img/man1.png" alt="">
-          <div class="fname1">친구이름1</div>
-          <div class="fstar1">평판4점</div>
-          <div class="fcomment">배드민턴 좋아용~ 네~</div>
-        </li>
-      </ul>
-    </div>
-
     <div class="myactivitytext">내 활동 목록</div>
-    <div class="tab">
+    <div class="mytab">
       <ul>
-          <li data-id="con1" class="on">참여중</li>
+          <li data-id="con1" class="on">참여중</li> 
           <li data-id="con2">참여완료</li>
       </ul>
       <div id="con1" class="conBox on">
@@ -57,7 +46,7 @@
 
     <div class="myclubtext">내 동아리</div>
     <div class="myclub">
-      <h4>동아리 회장이면 다르게 띄우는거하지</h4>
+      <h4>동아리 회장이면 다르게 띄우는거 해야함</h4>
       <ul>
         <li>동아리1</li>
       </ul>
