@@ -1,46 +1,97 @@
 *{
   margin:0; padding:0;
 }
-header {
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100px;
-  background: #55ddff 0% 0% no-repeat padding-box;
-  opacity: 1;
-  font-size: 60px;
-  text-align:center;
+header{
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    background-color: #64B3D7;
+    border: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
 }
+.tab-wrapper{
+    margin: 0 300px;
+}
+.tab ul{
+    width: 100%;
+    height:auto;
+}
+.tab li {
+    position: relative;
+    font-size: 16px;
+    color: white;
+    display: inline-block;
+    /* float: left; */
+    /* text-align: center;  */
+    cursor: pointer;
+
+}
+.header{
+    padding: 0 27px;
+    display: block;
+    line-height: 74px;
+}
+#menu{
+   padding-left: 0;
+   margin: 0;
+}
+#game-search{
+
+    margin: 0;
+}
+#club-search{
+
+    margin: 0;
+}
+#title{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 800px;
+}
+#join{
+    margin: 0;
+    padding-right: 0;
+    float: right;
+
+}
+#tab-login{
+   float: right;
+}
+
 .background_me_sq {
-  top: 100px;
+  top: 70px;
   width: 100%;
-  height: 70px;
-  background: #55ddff 0% 0% no-repeat padding-box;
+  height: 120px;
+  background: #64B3D7 0% 0% no-repeat padding-box;
   opacity: 1;
   position: absolute;
   margin: 0;
   padding: 0;
 }
 .background_me_oval {
-  top: 70px;
+  top: 65px;
   width: 100%;
   height: 207px;
-  background: #55ddff 0% 0% no-repeat padding-box;
+  background: #64B3D7 0% 0% no-repeat padding-box;
   border-radius: 100px;
   opacity: 1;
   position: absolute;
 }
 .mypic {
-  top: 41px;
+  top: 50px;
   left: 150px;
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   opacity: 1;
   border-radius: 100px;
   position: absolute;
 }
 .myname {
-  top: 60px;
+  top: 65px;
   left: 320px;
   width: 80px;
   height: 24px;
@@ -50,13 +101,13 @@ header {
   position: absolute;
 }
 .mystar {
-  top: 65px;
+  top: 70px;
   left: 470px;
   font-size: 14px;
   position: absolute;
 }
 .mycomment {
-  top: 100px;
+  top: 110px;
   left: 320px;
   font-size: 12px;
   position: absolute;
@@ -73,84 +124,22 @@ header {
   position: absolute;
 }
 
-.frequest_text { /*친구요청 글자*/
-  top: 300px;
-  left: 200px;
-  font-size:40px;
-  position: absolute;
-}
-.frequestbox {
-  top: 360px;
-  left: 200px;
-  width: 1144px;
-  height: 170px;
-  position: absolute;
-  border: 1px solid #707070;
-}
-#frequests {
-  margin-top: 10px;
-  margin-left: 15px;
-}
-
-.friendtext { /* 친구목록 위 글자*/
-  top: 560px;
-  left: 200px;
-  font-size:40px;
-  position: absolute;
-}
-.morefriend { /*전체보기 */
-  top: 560px;
-  left: 1170px;
-  font-size: 40px;
-  position: absolute;
-  background: #FFFFFF;
-  border: 0px;
-}
-.friendbox { /* 친구목록 테두리선 */
-  top: 620px;
-  left: 200px;
-  width: 1144px;
-  height: 420px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  opacity: 1;
-  position: absolute;
-}
-#friends li img { /* 친구 프로필사진 */
-  border-radius:50%;
-  width: 80px;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.fname1 { /*친구1이름*/
-  display:inline-block;
-  font-size:30px;
-}
-.fstar1 {
-  display:inline-block;
-  font-size:18px;
-}
-.fcomment {
-  left: 30px;
-  font-size: 12px;
-  position: absolute;
-}
-
 .myactivitytext { /* 활동목록 위 글자*/
-  top: 1070px;
+  top: 320px;
   left: 200px;
   font-size:40px;
   position: absolute;
 }
-.tab{
-  top: 1130px;
+.mytab{
+  top: 380px;
   left: 200px;
   width: 1144px;
   height:auto;
+  min-height: 200px;
   overflow:hidden;
   position: absolute;
 }
-.tab ul{
+.mytab ul{
   padding:0;
   margin:0;
   list-style:none;
@@ -158,44 +147,45 @@ header {
   height:auto;
   overflow:hidden;
 }
-.tab ul li{
+.mytab ul li{
   display:inline-block;
-  width:562px;
+  width: 563px;
   float:left;
   line-height:40px;
   border: 3px solid #FFFFFF;
   text-align:center;
   cursor:pointer;
 }
-.tab ul li:hover,
-.tab ul li.on{
+.mytab ul li:hover,
+.mytab ul li.on{
   background:#ED6F76;
 }
-.tab .conBox{
+.mytab .conBox{
   padding: 10px 10px 10px 10px;
-  width:100%;
+  width: 100%;
   height:auto;
   overflow:hidden;
-  min-height:200px;
-  background:#fff;
+  min-height: 200px;
+  background: #e3e3e3;
+  border: 3px solid #FFFFFF;
   display:none;
   text-align:center;
 }
-.tab .conBox.on{
+.mytab .conBox.on{
   display:block;
 }
 
 .myclubtext {/*내 동아리 글자 */
-  top: 1380px;
+  top: 700px;
   left: 200px;
   font-size:40px;
   position: absolute;
 }
 .myclub { /*동아리 목록*/
-  top: 1440px;
+  top: 760px;
   left: 200px;
   width: 1144px;
-  height: 350px;
+  min-height: 350px;
   background: #e3e3e3 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
   opacity: 1;
