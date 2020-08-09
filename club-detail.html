@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>club-detail</title>
-    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/club-detail.css">
+    <!-- bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -23,16 +35,29 @@
 
     <section title="club-info">
         <div class="club-thum"></div>
-        <div class="club-title">동아리 이름</div>
+        <h2 class="club-title">동아리 이름</h2>
         <div class="user-info-wrapper">
             <div class="user-photo"></div>
             <div class="club-owner">동아리 관리인</div>
         </div>
         <div class="club-text" style="overflow: hidden; height: 80px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tempora facere beatae veritatis tempore omnis exercitationem temporibus est, dolor ad esse asperiores laborum inventore atque voluptate vero a expedita numquam.</div>
-        <div class="card sports-kind">축구</div>
-        <div class="card location">위치</div>
-        <div class="card isrecruit">정회원 모집중</div>
-        <button class="club-join-btn">참여하기</button>
+        
+       <div class="card-columns">
+        <div class="card">
+            <h2 >종목</h2>
+            <p>⚽️</p>
+        </div>
+        <div class="card location">
+            <h2 >지역 : 서울</h2>
+            <p>⛳️</p>
+        </div>
+        <div class="card isrecruit">
+            <h2 >정회원 모집중</h2>
+            <p>🐥</p>
+        </div>
+    </div>
+    <button type="button" class="btn join">신청하기</button>
+
     </section>
 
 </body>

@@ -40,22 +40,18 @@ section{
     box-sizing: border-box;
     margin-right: 25px;
     background-color: #fff;
-    width: 30%; 
-    height: 300px;
-    position: relative; 
+    padding: 60px 0;
     border-radius: 12px;
     box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
-    border-radius: 4px;
-
-    margin: 10px;
+    text-align: center;
   }
 
-  .club-join-btn{
-    background-color: white;
-    border: 1px solid #646464;
-    color: #646464;
-    padding: 6px 20px;
-    border-radius: 8px;
-    
-    cursor: pointer;
+.card > h2{
+}
+.card > h2+p {
+    font-size: 100px;
+}
+
+.btn.join{
+    background-color:#55ddff;
 }
