@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>mypage</title>
-    <link rel="stylesheet" href="css/mypage.css">
+    <link rel="stylesheet" href="css/mypage1.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </head>
   <body>
     <script src="js/mypage.js"></script>
     <header>
+       <link rel="stylesheet" href="css/header.css">
        <div class="tab-wrapper">
            <ul class="tab">
                <a href="#"><li class="header menu"id="menu">메뉴</li></a>
@@ -24,15 +25,15 @@
     <div class="background_me_oval">
         <img src="img/man1.png" class="mypic">
         <div class="myname">김아무개</div>
-        <div class="mystar">평판 5점</div>
-        <div class="mycomment">축구 좋아합니당</div>
+        <div class="mygame">선호종목: 축구/농구</div>
+        <div class="mycomment">상태메시지 블ㄹ라블라~~~~~~~~~</div>
         <button class="btn_me" type="button">수정하기</button>
     </div>
 
     <div class="myactivitytext">내 활동 목록</div>
     <div class="mytab">
       <ul>
-          <li data-id="con1" class="on">참여중</li> 
+          <li data-id="con1" class="on">참여중</li>
           <li data-id="con2">참여완료</li>
       </ul>
       <div id="con1" class="conBox on">
@@ -45,14 +46,31 @@
     </div>
 
     <div class="myclubtext">내 동아리</div>
-    <div class="myclub">
-      <h4>동아리 회장이면 다르게 띄우는거 해야함</h4>
+
+    <?--회장인 경우 탭메뉴-->
+    <div class="clubtab">
       <ul>
-        <li>동아리1</li>
+          <li data-id="clubcon1" class="on">가입된 동아리</li>
+          <li data-id="clubcon2">동아리 참여요청</li>
       </ul>
-      <ul>
-        <li>동아리2</li>
-      </ul>
+      <div id="clubcon1" class="clubconBox on">
+          가입한 동아리1 <br>
+          가입한 동아리2 <br>
+      </div>
+      <div id="clubcon2" class="clubconBox">
+          ㅇㅇㅇ님이 축구 동아리 'AAAAA'에 가입을 신청하셨습니다.
+      </div>
     </div>
+
+    <?--회장아닌 경우 탭메뉴 없는거-->
+    <div class="myclubBox">
+      <div class="clubCon">
+        <ul>
+
+        </ul>
+      </div>
+    </div>
+
+
   </body>
 </html>
