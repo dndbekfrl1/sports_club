@@ -1,66 +1,6 @@
 *{
   margin:0; padding:0;
 }
-header{
-    width: 100%;
-    height: 70px;
-    box-sizing: border-box;
-    background-color: #64B3D7;
-    border: none;
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-}
-.tab-wrapper{
-    margin: 0 300px;
-}
-.tab ul{
-    width: 100%;
-    height:auto;
-}
-.tab li {
-    position: relative;
-    font-size: 16px;
-    color: white;
-    display: inline-block;
-    /* float: left; */
-    /* text-align: center;  */
-    cursor: pointer;
-
-}
-.header{
-    padding: 0 27px;
-    display: block;
-    line-height: 74px;
-}
-#menu{
-   padding-left: 0;
-   margin: 0;
-}
-#game-search{
-
-    margin: 0;
-}
-#club-search{
-
-    margin: 0;
-}
-#title{
-    position: absolute;
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    left: 800px;
-}
-#join{
-    margin: 0;
-    padding-right: 0;
-    float: right;
-
-}
-#tab-login{
-   float: right;
-}
 
 .background_me_sq {
   top: 70px;
@@ -100,7 +40,7 @@ header{
   opacity: 1;
   position: absolute;
 }
-.mystar {
+.mygame {
   top: 70px;
   left: 470px;
   font-size: 14px;
@@ -145,6 +85,7 @@ header{
   list-style:none;
   width:100%:
   height:auto;
+  font-size: 18px;
   overflow:hidden;
 }
 .mytab ul li{
@@ -161,11 +102,12 @@ header{
   background:#ED6F76;
 }
 .mytab .conBox{
-  padding: 10px 10px 10px 10px;
+  padding: 20px 10px 10px 10px;
   width: 100%;
   height:auto;
   overflow:hidden;
   min-height: 200px;
+  font-size: 16px;
   background: #e3e3e3;
   border: 3px solid #FFFFFF;
   display:none;
@@ -181,13 +123,16 @@ header{
   font-size:40px;
   position: absolute;
 }
-.myclub { /*동아리 목록*/
+.myclubBox { /*동아리 박스*/
   top: 760px;
   left: 200px;
   width: 1144px;
   min-height: 350px;
-  background: #e3e3e3 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
+  background: #e3e3e3;
+  border: 3px solid #FFFFFF;
   opacity: 1;
   position:absolute;
+}
+.clubCon {
+  padding: 20px 10px 10px 10px;
 }
