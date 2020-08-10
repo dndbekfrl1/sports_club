@@ -117,13 +117,61 @@
   display:block;
 }
 
+
 .myclubtext {/*내 동아리 글자 */
-  top: 700px;
+  top: 710px;
   left: 200px;
   font-size:40px;
   position: absolute;
 }
-.myclubBox { /*동아리 박스*/
+.clubtab{ /*회장일때 탭메뉴*/
+  top: 770px;
+  left: 200px;
+  width: 1144px;
+  height:auto;
+  min-height: 200px;
+  overflow:hidden;
+  position: absolute;
+}
+.clubtab ul{
+  padding:0;
+  margin:0;
+  list-style:none;
+  width:100%:
+  height:auto;
+  font-size: 18px;
+  overflow:hidden;
+}
+.clubtab ul li{
+  display:inline-block;
+  width: 563px;
+  float:left;
+  line-height:40px;
+  border: 3px solid #FFFFFF;
+  text-align:center;
+  cursor:pointer;
+}
+.clubtab ul li:hover,
+.clubtab ul li.on{
+  background:#ED6F76;
+}
+.clubtab .clubconBox{
+  padding: 20px 10px 10px 10px;
+  width: 100%;
+  height:auto;
+  overflow:hidden;
+  min-height: 200px;
+  font-size: 16px;
+  background: #e3e3e3;
+  border: 3px solid #FFFFFF;
+  display:none;
+  text-align:center;
+}
+.clubtab .clubconBox.on{
+  display:block;
+}
+
+.myclubBox { /*동아리 박스-회장 아닌거*/
   top: 760px;
   left: 200px;
   width: 1144px;
@@ -132,7 +180,9 @@
   border: 3px solid #FFFFFF;
   opacity: 1;
   position:absolute;
+  display: none;
 }
 .clubCon {
   padding: 20px 10px 10px 10px;
+  display: none;
 }
