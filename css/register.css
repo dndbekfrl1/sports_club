@@ -1,15 +1,16 @@
-body{
+body {
     margin: 100px 300px;
     color: #646464;
-    
+
 }
-button{
+
+button {
     background-color: white;
     border: 1px solid #D5D5D5;
     color: #646464;
 }
 
-.join-wrapper{
+.join-wrapper {
     text-align: center;
     width: 100%;
     border: 1px solid #D5D5D5;
@@ -21,26 +22,32 @@ table {
     text-align: left;
     padding: 40px 80px;
 }
-tr{
-   height: 60px;
-   
+
+tr {
+    height: 60px;
+
 }
-th{
+
+th {
     width: 150px;
     font-size: 18px;
     font-weight: inherit;
 }
+
 input {
     border: 1px solid #D5D5D5;
     padding: 4px 8px;
 }
-.alert{
+
+.alert {
     font-size: 14px;
 }
-.join-btn-wrapper{
+
+.join-btn-wrapper {
     margin: 40px 0;
 }
-.join-btn{
+
+.join-btn {
     display: inline-block;
     vertical-align: middle;
     width: 150px;
@@ -51,7 +58,8 @@ input {
     padding: 10px 5px;
     cursor: pointer;
 }
-.join-btn:hover{
+
+.join-btn:hover {
     background-color: #DC736D;
     border: none;
     color: white;

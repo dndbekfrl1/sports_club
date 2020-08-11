@@ -10,20 +10,22 @@
 #64B3D7 : 하늘
 */
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: #646464;
 }
 
 /* 썸네일 영역 */
-.main-thumnail{
+.main-thumnail {
     width: 100%;
     height: 600px;
     background-color: rgb(255, 255, 255);
@@ -31,108 +33,122 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.main-thumnail-text-wrapper{
+
+.main-thumnail-text-wrapper {
     height: 100%;
     margin: 0 300px;
     color: white;
     text-align: center;
 }
-.main-thumnail-text{
+
+.main-thumnail-text {
     /* color: ; */
     font-weight: bold;
     font-size: 40px;
     padding: 220px 0;
 
 }
+
 /* 사이트 요약 한 줄*/
-.main-oneline-wrapper{
+.main-oneline-wrapper {
     width: 100%;
     height: 120px;
     text-align: center;
     padding: 32px 0;
     box-sizing: border-box;
 }
-.main-oneline{
+
+.main-oneline {
     font-size: 24px;
 }
+
 /*경기 리스트*/
 
 /* 동아리 리스트*/
-.game-list{
+.game-list {
     width: 100%;
     height: 100%;
     padding: 16px 0;
 
 }
-.game-list-wrapper{
+
+.game-list-wrapper {
     margin: 0 300px;
 }
-#game
- {
-    display:inline-block;
+
+#game {
+    display: inline-block;
     box-sizing: border-box;
     margin-right: 25px;
     background-color: #fff;
-    width: 30%; 
+    width: 30%;
     height: 450px;
-    position: relative; 
+    position: relative;
     border-radius: 12px;
-    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
 
     margin: 10px;
 }
-.game-list{
+
+.game-list {
     width: 100%;
     height: 100%;
     padding: 16px 0;
 }
 
 
-
-.game-thum{
+.game-thum {
     width: 100%;
     height: 50%;
     position: relative;
     border-radius: 17px 17px 0 0;
     background-color: #DC736D;
 }
-.show-more{
+
+.show-more {
     float: right;
-    
+
 }
+
 /*가입 권유*/
-.invite-join{
+.invite-join {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     text-align: center;
     padding: 100px 0;
 }
-.invite-join ::before{
+
+.invite-join ::before {
     display: inline-block;
     content: "";
     height: 100%;
     vertical-align: middle;
 }
-.invite-join-text-wrapper{
+
+.invite-join-text-wrapper {
     text-align: center;
     margin: 0 300px;
 }
-.subtitle-text{
+
+.subtitle-text {
     font-size: 24px;
     margin: 8px 0;
     font-weight: bold;
 }
-.detail-text{
+
+.detail-text {
     margin: 8px 0;
     font-size: 18px;
 }
-.join-btn-wrapper{
+
+.join-btn-wrapper {
     margin: 0 300px;
     text-align: center;
 }
-.join-btn{
+
+.join-btn {
     display: inline-block;
     vertical-align: middle;
     width: 150px;
@@ -143,7 +159,8 @@ a{
     padding: 10px 5px;
     cursor: pointer;
 }
-.join-btn:hover{
+
+.join-btn:hover {
     background-color: #DC736D;
     border: 1px solid #DC736D;
     color: white;

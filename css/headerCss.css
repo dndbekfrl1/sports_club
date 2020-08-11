@@ -1,0 +1,129 @@
+/* 여기서부턴 헤드 CSS */
+.header {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    border-bottom: 2px solid black;
+    background-color: #55ddff;
+}
+
+.header ::after {
+    content: "";
+    clear: both;
+}
+
+.nav {
+    float: left;
+    width: 45%;
+    height: 100%;
+}
+
+.headTitle {
+    float: left;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 10px;
+}
+
+.right {
+    float: left;
+    width: 45%;
+    height: 100%;
+}
+
+ul.nonStyle {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 40px;
+}
+
+ul.textRight {
+    text-align: right;
+}
+
+.headList {
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.menuImg {
+    width: 50px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+/*
+로그인 팝업 부분  
+*/
+.pullSize {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loginPopup {
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+
+    background-color: white;
+}
+
+.loginHeader {
+    width: 100%;
+    height: 40px;
+    background-color: #64B3D7;
+    padding-left: 10px;
+}
+
+.loginData {
+    width: 100%;
+    height: 260px;
+}
+
+.inputID {
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 0;
+    width: 90%;
+    height: 35px;
+    border: 1px solid #838383;
+    padding: 0 10px;
+}
+
+.inputPW {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    height: 35px;
+    border: 1px solid #838383;
+    padding: 0 10px;
+}
+
+.loginButton {
+    display: block;
+    margin: 5px auto;
+    border: none;
+    width: 50%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #64B3D7;
+    font-size: 1.4em;
+}
+
+.popupLink {
+    display: block;
+    text-align: center;
+}

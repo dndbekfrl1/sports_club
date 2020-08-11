@@ -1,57 +1,85 @@
-*{
+* {
     margin: 0;
     padding: 0;
     color: #646464;
 }
 
-section{
+section {
     margin: 0 300px;
 }
 
-.club-thum{
+
+.club-thum {
     width: 100%;
     height: 200px;
     background-image: url(/Users/jina/git/sportsclub/img/cott.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 40px 0;
 }
-.club-title{
+
+.club-title {
     width: 100%;
     font-size: 24px;
     font-weight: bold;
 }
-.user-info-wrapper{
+
+.user-info-wrapper {
 }
-.user-photo{
+
+.user-photo {
     display: inline-block;
     width: 28px;
     height: 28px;
     border-radius: 100%;
     background-color: #646464;
 }
-.club-owner{
-    font-size: 24px;
+
+.club-owner {
+
     display: inline-block;
 }
 
-.card
- {
-    display:inline-block;
+.club.card-columns {
+    margin: 50px 0;
+}
+
+.card {
+    display: inline-block;
     box-sizing: border-box;
     margin-right: 25px;
     background-color: #fff;
     padding: 60px 0;
     border-radius: 12px;
-    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
     text-align: center;
-  }
-
-.card > h2{
 }
-.card > h2+p {
+
+.card > h2 {
+}
+
+.card > h2 + p {
     font-size: 100px;
 }
 
-.btn.join{
-    background-color:#55ddff;
+.btn-wrapper {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.btn {
+
+}
+
+.btn.join {
+    font-size: 18px;
+    border: 1px solid #D5D5D5;
+    border-radius: 70px;
+    background-color: white;
+    padding: 10px 50px;
+}
+
+.btn.join:hover {
+    color: white;
+    background-color: #55ddff;
 }

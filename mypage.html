@@ -1,58 +1,71 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>mypage</title>
     <link rel="stylesheet" href="css/mypage.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  </head>
-  <body>
-    <script src="js/mypage.js"></script>
-    <header>
-       <div class="tab-wrapper">
-           <ul class="tab">
-               <a href="#"><li class="header menu"id="menu">메뉴</li></a>
-               <a href="#"><li class="header game-search"id="game-search">경기 검색</li></a>
-               <a href="search-club.html"><li class="header search-club">동아리 검색</li></a>
-               <a href="main.html"><li id="title" class="header header-title">타이틀</li></a>
-               <a href="register.html"><li id="join" class="header join">회원가입</li></a>
-               <a href="#"><li id="tab-login" class="header tab-login">로그인<li></a>
-           </ul>
-       </div>
-    </header>
-    <div class="background_me_sq"></div>
-    <div class="background_me_oval">
-        <img src="img/man1.png" class="mypic">
-        <div class="myname">김아무개</div>
-        <div class="mystar">평판 5점</div>
-        <div class="mycomment">축구 좋아합니당</div>
-        <button class="btn_me" type="button">수정하기</button>
+</head>
+<body>
+<script src="js/mypage.js"></script>
+<header>
+    <div class="tab-wrapper">
+        <ul class="tab">
+            <a href="#">
+                <li class="header menu" id="menu">메뉴</li>
+            </a>
+            <a href="#">
+                <li class="header game-search" id="game-search">경기 검색</li>
+            </a>
+            <a href="search-club.html">
+                <li class="header search-club">동아리 검색</li>
+            </a>
+            <a href="main.html">
+                <li id="title" class="header header-title">타이틀</li>
+            </a>
+            <a href="register.html">
+                <li id="join" class="header join">회원가입</li>
+            </a>
+            <a href="#">
+                <li id="tab-login" class="header tab-login">로그인
+                <li>
+            </a>
+        </ul>
     </div>
+</header>
+<div class="background_me_sq"></div>
+<div class="background_me_oval">
+    <img src="img/man1.png" class="mypic">
+    <div class="myname">김아무개</div>
+    <div class="mystar">평판 5점</div>
+    <div class="mycomment">축구 좋아합니당</div>
+    <button class="btn_me" type="button">수정하기</button>
+</div>
 
-    <div class="myactivitytext">내 활동 목록</div>
-    <div class="mytab">
-      <ul>
-          <li data-id="con1" class="on">참여중</li> 
-          <li data-id="con2">참여완료</li>
-      </ul>
-      <div id="con1" class="conBox on">
-          참여중인 채팅1 <br>
-          참여중인 채팅2 <br>
-      </div>
-      <div id="con2" class="conBox">
-          참여했던 채팅 1
-      </div>
+<div class="myactivitytext">내 활동 목록</div>
+<div class="mytab">
+    <ul>
+        <li data-id="con1" class="on">참여중</li>
+        <li data-id="con2">참여완료</li>
+    </ul>
+    <div id="con1" class="conBox on">
+        참여중인 채팅1 <br>
+        참여중인 채팅2 <br>
     </div>
+    <div id="con2" class="conBox">
+        참여했던 채팅 1
+    </div>
+</div>
 
-    <div class="myclubtext">내 동아리</div>
-    <div class="myclub">
-      <h4>동아리 회장이면 다르게 띄우는거 해야함</h4>
-      <ul>
+<div class="myclubtext">내 동아리</div>
+<div class="myclub">
+    <h4>동아리 회장이면 다르게 띄우는거 해야함</h4>
+    <ul>
         <li>동아리1</li>
-      </ul>
-      <ul>
+    </ul>
+    <ul>
         <li>동아리2</li>
-      </ul>
-    </div>
-  </body>
+    </ul>
+</div>
+</body>
 </html>
