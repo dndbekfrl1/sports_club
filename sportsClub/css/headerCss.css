@@ -4,7 +4,8 @@
     height: 70px;
     position: relative;
     border-bottom: 2px solid black;
-    background-color: #55ddff;
+    background-color: #5ac8fa;
+    /* #55ddff;*/
 }
 
 .header ::after {
