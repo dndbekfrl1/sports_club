@@ -1,0 +1,40 @@
+
+.mypic{
+    top: 150px;
+    left: 300px;
+    width: 270px;
+    border-radius: 100%;
+    position: absolute;
+}
+.changepic {
+    top: 450px;
+    left: 380px;
+    width: 110px;
+    height: 40px;
+    position: absolute;
+}
+
+.verticalLine {
+    top: 150px;
+    left: 600px;
+    position: absolute;
+    height: 500px;
+    padding: 20px 20px 20px 20px;
+    border-left: 1px solid #000000;
+  }
+  .name {
+    padding: 10px 10px 10px 10px;
+  }
+  .id {
+    padding: 10px 10px 10px 10px;
+  }
+  .favmatch {
+    padding: 10px 10px 10px 10px;
+  }
+  .mycomment {
+    padding: 10px 10px 10px 10px;
+  }
+  textarea {
+      width: 400px;
+      min-height: 110px;
+  }
