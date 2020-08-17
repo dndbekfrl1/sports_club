@@ -1,17 +1,41 @@
 
 .mypic{
-    top: 150px;
-    left: 300px;
-    width: 270px;
-    border-radius: 100%;
-    position: absolute;
+  top: 150px;
+  left: 300px;
+  width: 270px;
+  border-radius: 100%;
+  position: absolute;
 }
-.changepic {
-    top: 450px;
-    left: 380px;
-    width: 110px;
-    height: 40px;
-    position: absolute;
+.filebox {
+  top: 450px;
+  left: 380px;
+  width: 110px;
+  height: 40px;
+  position: absolute;
+}
+.filebox label {
+  padding: 10px 10px 10px 10px;
+  display: inline-block;
+  color: #000000;
+  font-size: 16px;
+  line-height: normal;
+  vertical-align: middle;
+  background-color:#d5d5d5;
+  border: 1px solid #a8a8a8;
+  cursor: pointer;
+  border-radius: .25em;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.filebox input[type="file"] {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .verticalLine {
@@ -34,7 +58,17 @@
   .mycomment {
     padding: 10px 10px 10px 10px;
   }
+  .comCon {
+    padding-top: 10px;
+  }
   textarea {
-      width: 400px;
-      min-height: 110px;
+    width: 400px;
+    min-height: 110px;
+    resize: none
+  }
+  .combtn {
+    width: 80px;
+    background-color: #d5d5d5;
+    border: 1px solid #a8a8a8;
+    border-radius: 10%;
   }
