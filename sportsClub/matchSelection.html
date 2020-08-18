@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경기 선택</title>
+    <link href="css/headerCss.css" rel="stylesheet">
+    <link href="css/match-selection.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        <div class="nav">
+            <ul class="nonStyle">
+                <li class="headList"><img src="img/menuBar.png" class="menuImg"></li>
+                <li class="headList"><a>경기 검색</a></li>
+                <li class="headList"><a>동아리 검색</a></li>
+            </ul>
+        </div>
+        <div class="headTitle">TITLE</div>
+        <div class="right">
+            <ul class="nonStyle textRight">
+                <li class="headList"><a>회원가입</a></li>
+                <li class="headList"><a>로그인</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--로그인 팝업-->
+    <div class="pullSize" style="display: none;">
+        <div class="loginPopup">
+            <div class="loginHeader"><h2>Login Popup</h2></div>
+            <div class="loginData">
+                <form method="post" name="loginForm">
+                    <input name="userid" maxlength="20"
+                           type="text" placeholder="아이디" title="아이디를 입력하세요"
+                           class="inputID">
+                    <input name="userpw" maxlength="20" type="password"
+                           placeholder="비밀번호" title="비밀번호를 입력하세요" class="inputPW">
+                    <input type="submit" id="loginSubmit" value="로그인" class="loginButton">
+                </form>
+                <div class="popupLink">
+                    <a href="#" title="ID/PW 찾기 선택">ID/PW 찾기</a>
+                    <span> | </span>
+                    <a href="#" title="회원가입 선택">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrap">
+        <div class="search">
+            <div class="selectionWindow">
+
+                    <div class="textBar">
+                        <p>장소 입력 후 확인을 눌러주세요!</p>
+                    </div>
+                
+                    <div class="selectBar">
+                        <div class="addressBar">
+                            <div class="mapImg"></div>
+                            <div class="inputAddress"><input type="text"></div>
+                            <button class="selectButton">확인</button>
+                        </div>
+                        <div class="timeBar" style="display: none;"><input type="date"><input type="datetime"></div>
+                    </div>
+
+                    <div class="leftDirection"></div>
+                    <div class="sportCircle" style="bottom: 100px; left: -180px; display: none;"></div>
+                    <div class="sportCircle" style="bottom: 40px; left: 0px; background-image: url('img/volleyball.png');">
+                        <!-- <p>배구</p> -->
+                    </div>
+                    <div class="sportCircle" style="bottom: 5px; left: 180px; background-image: url('img/baseball.png');">
+                        <!-- <p>야구</p> -->
+                    </div>
+                    <div class="sportCircle" style="bottom: -20px; left: 360px; background-image: url('img/basketball.png');">
+                        <!-- <p>농구</p> -->
+                    </div>
+                    <div class="sportCircle" style="bottom: -20px; left: 540px; background-image: url('img/bowling.png');">
+                        <!-- <p>볼링</p> -->
+                    </div>
+                    <div class="sportCircle" style="bottom: 5px; left: 720px; background-image: url('img/football.png');">
+                        <!-- <p>축구</p> -->
+                    </div>
+                    <div class="sportCircle" style="bottom: 40px; left: 900px; background-image: url('img/tennisball.png');">
+                        <!-- <p>테니스</p> -->
+                    </div>
+                    <div class="sportCircle" style="bottom: 100px; left: 1080px; display: none;"></div>
+                    <div class="rightDirection"></div>
+                
+            </div>
+        </div>
+        <div class="sportList">
+            <div class="listWrapper">
+                <ul>
+                    <li class="smallList">
+                        <div class="listTitle">체육공원에서 농구하실 분!
+                        </div>
+                        <div class="listImg">
+                            
+                        </div>
+                        <div class="listEx">
+                            <p>서울시 중랑구 중화동 중랑천 체육공원</p>
+                            <p>2020년 8월 1일</p>
+                            <p>18:00~22:00</p>
+                            <p>[남자][번개][5명]</p> 
+                            <!--구력 3년 이상에 이기적이지 않고 승부욕 너무 강하지 않는 분들로 모집합니다. 게스트 비용은 없습니다. 각자 물 챙겨주세요!-->
+                        </div>
+                        <a href="#">상세 보기</a>
+                    </li>
+                    <li class="smallList">
+                        <div class="listTitle">체육공원에서 농구하실 분!
+                        </div>
+                        <div class="listImg">
+                            
+                        </div>
+                        <div class="listEx">
+                            <p>서울시 중랑구 중화동 중랑천 체육공원</p>
+                            <p>2020년 8월 1일</p>
+                            <p>18:00~22:00</p>
+                            <p>[남자][번개][5명]</p> 
+                            <!--구력 3년 이상에 이기적이지 않고 승부욕 너무 강하지 않는 분들로 모집합니다. 게스트 비용은 없습니다. 각자 물 챙겨주세요!-->
+                        </div>
+                        <a href="#">상세 보기</a>
+                    </li>
+                    <li class="smallList">
+                        <div class="listTitle">체육공원에서 농구하실 분!
+                        </div>
+                        <div class="listImg">
+                            
+                        </div>
+                        <div class="listEx">
+                            <p>서울시 중랑구 중화동 중랑천 체육공원</p>
+                            <p>2020년 8월 1일</p>
+                            <p>18:00~22:00</p>
+                            <p>[남자][번개][5명]</p> 
+                            <!--구력 3년 이상에 이기적이지 않고 승부욕 너무 강하지 않는 분들로 모집합니다. 게스트 비용은 없습니다. 각자 물 챙겨주세요!-->
+                        </div>
+                        <a href="#">상세 보기</a>
+                    </li>
+                    <li class="smallList">
+                        <div class="listTitle">체육공원에서 농구하실 분!
+                        </div>
+                        <div class="listImg">
+                            
+                        </div>
+                        <div class="listEx">
+                            <p>서울시 중랑구 중화동 중랑천 체육공원</p>
+                            <p>2020년 8월 1일</p>
+                            <p>18:00~22:00</p>
+                            <p>[남자][번개][5명]</p> 
+                            <!--구력 3년 이상에 이기적이지 않고 승부욕 너무 강하지 않는 분들로 모집합니다. 게스트 비용은 없습니다. 각자 물 챙겨주세요!-->
+                        </div>
+                        <a href="#">상세 보기</a>
+                    </li>
+                    <li class="smallList">
+                        <div class="listTitle">체육공원에서 농구하실 분!
+                        </div>
+                        <div class="listImg">
+                            
+                        </div>
+                        <div class="listEx">
+                            <p>서울시 중랑구 중화동 중랑천 체육공원</p>
+                            <p>2020년 8월 1일</p>
+                            <p>18:00~22:00</p>
+                            <p>[남자][번개][5명]</p> 
+                            <!--구력 3년 이상에 이기적이지 않고 승부욕 너무 강하지 않는 분들로 모집합니다. 게스트 비용은 없습니다. 각자 물 챙겨주세요!-->
+                        </div>
+                        <a href="#">상세 보기</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

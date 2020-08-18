@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모집글 등록</title>
+    <link href="css/headerCss.css" rel="stylesheet">
+    <link href="css/recruitment.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="nav">
+            <ul class="nonStyle">
+                <li class="headList"><img src="img/menuBar.png" class="menuImg"></li>
+                <li class="headList"><a>경기 검색</a></li>
+                <li class="headList"><a>동아리 검색</a></li>
+            </ul>
+        </div>
+        <div class="headTitle">TITLE</div>
+        <div class="right">
+            <ul class="nonStyle textRight">
+                <li class="headList"><a>회원가입</a></li>
+                <li class="headList"><a>로그인</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="wrap">
+        <div class="content">
+            <div class="ttl">
+                <h1>게스트or모임 등록</h1>
+            </div>
+            <div>
+                <form>
+                    <table>
+                        <tr class="inputBox">
+                            <th class="category">모집글 제목</th>
+                            <td><input class="textTitle" type="text"></td>
+                        </tr>
+                        <tr class="inputBox">
+                            <th class="category">모집 방식</th>
+                            <td>
+                                <select name="sport">
+                                    <option value="baseball">게스트</option>
+                                    <option value="basketball">동아리간 교류전</option>
+                                    <option value="volleyball">번개</option>
+                                </select>
+
+                                <select name="gender">
+                                    <option value="onlyWoman">여자만</option>
+                                    <option value="onlyMan">남자만</option>
+                                    <option value="all">남녀무관</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="inputBox">
+                            <th class="category">모임 장소</th>
+                            <td><input class="address" type="text"></td>
+                        </tr>
+
+                        <tr class="inputBox">
+                            <th class="category">모임 날짜</th>
+                            <td><input class="" type="date">시간도</td>
+                        </tr>
+                        <tr class="inputBox">
+                            <th class="category">모집 인원</th>
+                            <td><input class="num" type="text"></td>
+                        </tr>
+                        <tr class="inputBox">
+                            <th class="category">모집 조건</th>
+                            <td><textarea class="ex" placeholder="구력, 게스트비용, 준비물 등 필요한 내용을 입력해주세요."></textarea></td>
+                        </tr>
+                        
+                        <tr class="inputBox">
+                            <td colspan="2"><input type="submit" class="submission"></td>
+                        </tr>
+                        
+            
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

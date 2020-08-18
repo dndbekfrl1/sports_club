@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아리 등록</title>
+    <link href="css/headerCss.css" rel="stylesheet">
+    <link href="css/club-registration.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="nav">
+            <ul class="nonStyle">
+                <li class="headList"><img src="img/menuBar.png" class="menuImg"></li>
+                <li class="headList"><a>경기 검색</a></li>
+                <li class="headList"><a>동아리 검색</a></li>
+            </ul>
+        </div>
+        <div class="headTitle">TITLE</div>
+        <div class="right">
+            <ul class="nonStyle textRight">
+                <li class="headList"><a>회원가입</a></li>
+                <li class="headList"><a>로그인</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="content">
+            <div class="ttl">
+                <h1>동아리 등록</h1>
+            </div>
+            <div>
+                <form>
+                    <table>
+                        <tr class="inputBox">
+                            <th class="category">동호회명</th>
+                            <td><input class="clubName" type="text"></td>
+                        </tr>
+                        <tr class="inputBox">
+                            <th class="category">종목</th>
+                            <td>
+                                <select name="sport">
+                                    <option value="baseball">야구</option>
+                                    <option value="basketball">농구</option>
+                                    <option value="volleyball">배구</option>
+                                    <option value="bowling">볼링</option>
+                                    <option value="tennis">테니스</option>
+                                    <option value="football">축구</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="inputBox">
+                            <th class="category">동아리 주소</th>
+                            <td><input class="address" type="text"></td>
+                        </tr>
+                        <tr class="inputBox">
+                            <th class="category">이미지 업로드</th>
+                            <td><input class="imgFile" type="file"></td>
+                        </tr>
+                        <tr class="inputBox">
+                            <th class="category">동아리 설명</th>
+                            <td><input class="ex" type="text"></td>
+                        </tr>
+                        <tr class="inputBox">
+                            <th class="category">정회원 모집 여부</th>
+                            <td><input class="box" type="checkbox"></td>
+                        </tr>
+                        <tr class="inputBox">
+                            <td colspan="2"><input type="submit" class="submission"></td>
+                        </tr>
+                        
+            
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

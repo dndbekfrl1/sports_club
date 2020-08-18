@@ -1,10 +1,13 @@
 /* 여기서부턴 헤드 CSS */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+
 .header {
     width: 100%;
     height: 70px;
     position: relative;
     border-bottom: 2px solid black;
-    background-color: #5ac8fa;
+    background-color: #55ddff;
     /* #55ddff;*/
 }
 
@@ -56,9 +59,7 @@ ul.textRight {
     margin-top: 5px;
 }
 
-/*
-로그인 팝업 부분  
-*/
+/* 로그인 팝업 부분  */
 .pullSize {
     position: absolute;
     left: 0;

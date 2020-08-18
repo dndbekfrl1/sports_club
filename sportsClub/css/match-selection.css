@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin : 0;
+    font-family: 'Jua', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+div{
+    margin: 0 auto;
+}
+
+.wrap{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(#55ddff, transparent);
+}
+
+.search{
+    width:70%;
+    height: 450px;
+}
+
+.sportList{
+    width:70%;
+    height: auto;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.smallList{
+    width : 235px;
+    height: 340px;
+    float: left;
+    margin : 20px 11px;
+    background-color: #F0F0F0;
+    border: 1px solid #55ddff;
+    display: block;
+}
+
+.smallList::after{
+    content: "";
+    clear: both;
+}
+
+.listWrapper{
+    margin-top: 20px;
+    width: 1050px;
+    height: auto;
+}
+
+.selectionWindow{
+    width: 1050px;
+    height: 446px;
+    border-radius: 0 0 35% 35%;
+    position: relative;
+    z-index: 1;
+
+}
+
+.selectBar{
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    top: 150px;
+}
+
+.sportCircle{
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*
+
+.sportCircle:hover{
+    animation-name: ballLight;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ballLight{
+    from {
+        transform: rotate(0deg);
+        !*bottom: 40px;
+        left: 0px;*!
+    }
+    to {
+        transform: rotate(360deg);
+        !*bottom: 5px;
+        left: 180px;*!
+    }
+}
+*/
+
+.addressBar{
+    width: 55%;
+    height: 100%;
+    border: 3px solid black;
+}
+
+.timeBar{
+    width: 64%;
+    height: 100%;
+    display: inline-block;
+}
+
+.mapImg{
+    background-image: url('../img/mapPin.png');
+    background-repeat: no-repeat;
+    margin: 2px 0 0 15px;
+    width: 80px;
+    height: 100%;
+    float: left;
+}
+
+.inputAddress{
+    width: 350px;
+    height: 100%;
+    float: left;
+}
+
+.inputAddress > input{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0);
+    border: 0;
+    font-size: 2em;
+}
+
+.leftDirection{
+    position: absolute;
+    bottom: 180px;
+    left: -80px;
+    transform: rotate(45deg);
+    width: 64px;
+    height: 64px;
+    background-image: url('../img/left.png');
+    z-index: 3;
+}
+
+.rightDirection{
+    position: absolute;
+    bottom: 180px;
+    left: 1060px;
+    transform: rotate(-45deg);
+    width: 64px;
+    height: 64px;
+    background-image: url('../img/right.png');
+    z-index: 3;
+}
+
+.listTitle{
+    width: 90%;
+    height: 30px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #55ddff;
+}
+
+.listImg{
+    width: 90%;
+    height: 100px;
+    margin-top: 10px;
+    background-image: url('../img/Tennis.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.listEx{
+    border-top: 1px solid #55ddff;
+    width: 90%;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.smallList p {
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+.smallList a{
+    float: right;
+    color: #64B3D7;
+    font-size: 1.1em;
+    margin: 10px;
+    line-height: 0.3;
+}
+
+.textBar{
+    width: 70%;
+    text-align: center;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    font-size: 2em;
+    transform: translate(-50%, -50%);
+    /*     animation-name: textMove;
+        animation-duration: 1s;
+        animation-iteration-count: 6;
+        animation-direction: alternate;*/
+}
+/*
+
+@keyframes textMove{
+    0% {
+        font-size: 2em;
+    }
+    100% {
+        font-size: 2.2em;
+    }
+}
+*/
+
+.selectButton{
+    border: none;
+    background-color: rgba(255,255,255,0);
+    color: black;
+    float: right;
+    width: 60px;
+    height: 40px;
+    font-size: 1.5em;
+    margin: 15px 15px 0 0;
+}
+
+.sportCircle > p {
+    background-color: rgba(255,255,255,0);
+    color: #55ddff;
+    text-align: center;
+    padding-top: 55px;
+    font-size: 2.5em;
+    text-shadow: 4px 4px white, -4px 4px white, 4px -4px white, -4px -4px white;
+}
