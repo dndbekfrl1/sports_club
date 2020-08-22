@@ -3,9 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>chat</title>
-    <link rel="stylesheet" href="css/chatpage.css">
+	<link rel="stylesheet" href="css/chatpage.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </head>
   <body>
+	<header>
+		<link rel="stylesheet" href="css/header.css">
+		<div class="tab-wrapper">
+			<ul class="tab">
+				<a href="#"><li class="header menu"id="menu">메뉴</li></a>
+				<a href="#"><li class="header game-search"id="game-search">경기 검색</li></a>
+				<a href="search-club.html"><li class="header search-club">동아리 검색</li></a>
+				<a href="main.html"><li id="title" class="header header-title">타이틀</li></a>
+				<a href="register.html"><li id="join" class="header join">회원가입</li></a>
+				<a href="#"><li id="tab-login" class="header tab-login">로그인<li></a>
+			</ul>
+		</div>
+	 </header>
+	<script src="js/chatpage.js"></script>
+	
     <div id="container">
   	<aside>
   		<ul>
@@ -32,14 +48,14 @@
   		</ul>
   	</aside>
   	<main>
-      <header>
+      <div class="chatheader">
   			<img src="" alt="">
   			<div>
   				<h2>축구 톡방</h2>
   				<h3>방장: 신짱구</h3>
   			</div>
   			<img src="" alt="">
-  		</header>
+		</div>
 
       <div class="notice">
         <div class="noticetext">공지사항: 00시 00분 A 구장 ...</div>
@@ -47,7 +63,7 @@
       </div>
 
       <div class="map">
-		  <div class="maptext">지도영역</div>
+		<div class="maptext">지도영역</div>
 		<button type="button" class="btn_map">접기</button>
 	  </div>
 
