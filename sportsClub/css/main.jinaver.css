@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    /* padding: 0 300px; */
+}
+
+/* header */
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+.navbar.navbar-expand-sm{
+    padding: 0;
+
+}
+#collapsibleNavbar{
+    padding: 5px 300px ;
+    background-color: skyblue;
+}
+
+
+/* section -- main thumnail*/
+.main-thumnail{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/basketball.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-thumnail-text-wrapper {
+    height: 100%;
+    margin: 0 300px;
+    color: white;
+    text-align: center;
+}
+.main-thumnail-text {
+    /* color: ; */
+    font-weight: bold;
+    font-size: 40px;
+    padding: 220px 0;
+
+}
+
+/* 사이트 요약 한 줄*/
+.main-oneline-wrapper {
+    width: 100%;
+    height: 80px;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+/* 게임 리스트 */
+.game-list{
+    padding: 0 300px;
+}
+.game.card-columns{
+
+}
+.game.card{
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top{
+    height: 200px;
+    background-image: url(../img/basketball.jpg);
+    background-size: cover;
+}
+
+.wrapper > .profile{
+    display: inline-block;
+    width: 28px; 
+    height: 28px; 
+    border-radius: 100%; 
+    background-color: rgb(111, 199, 199);
+}
+.wrapper > p{
+}
+
+.game_info > p{
+    margin: 0;
+}
+.game .btn{
+    border: 1px solid #D5D5D5;
+    background-color: white;
+}
+.game .btn:hover{
+    background-color:skyblue;
+}
+
+.show-more{
+    float: right;
+}
+
+/*가입 권유*/
+.invite-join {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.invite-join ::before {
+    display: inline-block;
+    content: "";
+    height: 100%;
+    vertical-align: middle;
+}
+
+.invite-join-text-wrapper {
+    text-align: center;
+    margin: 0 300px;
+}
+
+.subtitle-text {
+    font-size: 24px;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+.detail-text {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.join-btn-wrapper {
+    margin: 0 300px;
+    text-align: center;
+}
+
+.join-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+    font-size: 18px;
+    border: 1px solid #D5D5D5;
+    border-radius: 70px;
+    background-color: white;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.join-btn:hover {
+    background-color: #DC736D;
+    border: 1px solid #DC736D;
+    color: white;
+}
+
+/* footer */
+footer{
+    height: 200px;
+    background-color: skyblue;
+}
