@@ -1,5 +1,16 @@
 
-window.onload=function() {
+function value_check() { //선호종목
+  var check_count = document.getElementsByName("match").length;
+
+  for (var i=0; i<check_count; i++) {
+      if (document.getElementsByName("match")[i].checked == true) {
+          alert(document.getElementsByName("match")[i].value);
+      }
+  }
+}
+
+
+window.onload=function() { //상태메시지 수정
     document.getElementById("combtn").onclick=processText;
    }
    
@@ -18,4 +29,6 @@ window.onload=function() {
     var   blk   = document.getElementById("result");
     blk.innerHTML  =  resultString; 
    }
+
+   
    
