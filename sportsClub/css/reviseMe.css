@@ -56,17 +56,20 @@
     padding: 10px 10px 10px 10px;
   }
   .matchCon {
-    padding: 5px 5px 5px 5px;
+    padding: 10px 10px 10px 10px;
     border: 2px solid #FFFFFF;
+    border-bottom: 13px solid #FFFFFF;
   }
-  .matchCon input {
-    padding-left: 3px;
+  .matchCon .input {
+    padding-left: 5px;
   }
-  .matchbtn {
+  .favmatch button {
     padding: 5px 5px 5px 5px;
+    width: 80px;
     background-color: #d5d5d5;
     border: 1px solid #a8a8a8;
     border-radius: 10%;
+    float: right;
   }
   .mycomment {
     padding: 10px 10px 10px 10px;
@@ -75,12 +78,12 @@
     padding: 10px 10px 10px 10px;
   }
   .combox {
-    
     padding-left: 10px;
   }
   textarea {
-    width: 400px;
+    width: 350px;
     min-height: 110px;
+    padding: 10px 10px 10px 10px;
     resize: none
   }
   .combtn {
