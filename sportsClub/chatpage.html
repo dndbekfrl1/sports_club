@@ -21,27 +21,27 @@
 		</div>
 	 </header>
 	<script src="js/chatpage.js"></script>
-	
+
     <div id="container">
   	<aside>
   		<ul>
 			<li>
 				<img src="img/man1.png" alt="">
 				<div>
-					<h2>축구톡방/A구장/ ...</h2>
+					<h2>축구/은평롯데몰/8월23일</h2>
 					<h3>
-						<span class="status orange"></span>
-						offline
+						<span class="status green"></span>
+						online
 					</h3>
 				</div>
 			</li>
 			<li>
 				<img src="img/man1.png" alt="">
 				<div>
-					<h2>사람1</h2>
+					<h2>농구/한강공원/8월25일</h2>
 					<h3>
-						<span class="status green"></span>
-						online
+						<span class="status orange"></span>
+						offline
 					</h3>
 				</div>
 			</li>
@@ -57,17 +57,23 @@
   			<img src="" alt="">
 		</div>
 
-      <div class="notice">
-        <div class="noticetext">공지사항: 00시 00분 A 구장 ...</div>
-        <button type="button" class="btn_notice">접기</button>
-      </div>
-
-      <div class="map">
-		<div class="maptext">지도영역</div>
-		<button type="button" class="btn_map">접기</button>
-	  </div>
-
   		<ul id="chat">
+			<div class="notice">
+				<button type="button" class="btn_notice">접기</button>
+				<div class="noticetext">
+					[공지사항]
+					<ul class="hide">
+						<li>8월 30일 일요일 17시</li>
+						<li>준비물: 축구화</li>
+					</ul> 
+				</div>
+			  </div>
+
+			  <div class="map">
+				<div class="maptext">지도영역</div>
+				<button type="button" class="btn_map">접기</button>
+			  </div>
+			  
   			<li class="you">
   				<div class="entete">
   					<span class="status green"></span>
@@ -102,12 +108,15 @@
   				</div>
   			</li>
   		</ul>
-
-  		<footer>
-  			<textarea placeholder="Type your message"></textarea>
+		<div class="sendbox">
+			<textarea placeholder="Type your message"></textarea>
   			<a href="#">Send</a>
-  		</footer>
+		</div>
+  		
   	</main>
-    </div>
+	</div>
+	<footer>
+		
+	</footer>
   </body>
 </html>
