@@ -2,10 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>마이페이지 수정</title>
     <link rel="stylesheet" href="css/reviseMe.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </head>
   <body>
+    <script src="js/reviseMe.js"></script>
     <header>
        <link rel="stylesheet" href="css/header.css">
        <div class="tab-wrapper">
@@ -36,15 +38,26 @@
           아이디: kimaaaa
         </div>
         <div class="favmatch">
-          선호종목: 
-          
+          선호종목: 축구/농구 <br>
+          <div class="matchCon">
+            <input type="checkbox" name="match" value="soccer" /> 축구   
+            <input type="checkbox" name="match" value="basketball" /> 농구   
+            <input type="checkbox" name="match" value="baseball" /> 야구   
+            <input type="checkbox" name="match" value="tennis" /> 테니스   
+            <input type="checkbox" name="match" value="volleyball" /> 배구   
+            <input type="checkbox" name="match" value="balling" /> 볼링
+            <input type="checkbox" name="match" value="pocketball" /> 당구
+            <input type="checkbox" name="match" value="tabletennis" /> 탁구
+            <br>
+          </div>
+          <button id="matchbtn" onclick="value_check()">수정</button>
         </div>
         <div class="mycomment">
           상태메시지: <br>
-          <div class="comCon">
-            상태메시지~~~~~~~~~ <br>
-            <textarea name="comment" placeholder="상태메시지 입력/수정"></textarea>
-            <button class="combtn">수정</button>
+          <div class="comCon" id="result">상태메시지~~~~~~~</div>
+          <div class="combox">
+            <textarea id="comment" placeholder="상태메시지 입력/수정"></textarea>
+            <button class="combtn" id="combtn">수정</button>
           </div>
         </div>
       </div>

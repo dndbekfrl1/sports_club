@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link href="css/main.jinaver.css" rel="stylesheet">
+    <!-- 부트스트랩 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm">
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <!-- <a href="#">
+                        <li class="header menu" id="menu">메뉴</li>
+                    </a>
+                    <a href="#">
+                        <li class="header game-search" id="game-search">경기 검색</li>
+                    </a>
+                    <a href="search-club.html">
+                        <li class="header search-club">동아리 검색</li>
+                    </a>
+                    <a href="main.html">
+                        <li id="title" class="header header-title">타이틀</li>
+                    </a>
+                    <a href="register.html">
+                        <li id="join" class="header join">회원가입</li>
+                    </a>
+                    <a href="#">
+                        <li id="tab-login" class="header tab-login">로그인
+                        <li>
+                    </a> -->
+
+
+                    <li class="nav-item"><a href="#" class="nav-link">메뉴</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">경기 검색</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">타이틀</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">회원가입</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">로그인</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section>
+        <div class="main-thumnail">
+            <div class="main-thumnail-text-wrapper">
+                <div class="main-thumnail-text">사람들과 함께 <br><span id="sports-kind">운동</span>을 즐기세요!</div>
+                <script>
+
+                    var index = 0;
+                    setInterval(function () {
+                        var thumnail = new Array("thumnail_soccer.jpg", "thumnail_baseball.jpg", "thumnail_basketball.jpg", "thumnail_billiards.jpg")
+                        var kind = new Array("축구", "야구", "농구", "당구");
+
+                        console.log(index);
+                        if (index > kind.length) {
+                            index = 0;
+                        }
+                        $(".main-thumnail").css({ "background-image": "url(img/" + thumnail[index] + ")" });
+                        $("#sports-kind").text(kind[index]);
+                        index++;
+                    }, 3000);
+
+                </script>
+            </div>
+        </div>
+        <div class="main-oneline-wrapper">
+            <h5 class="text-center">중앙정렬된 텍스트.</h5>
+            <!-- <p class="main-oneline-wrapper text-center">사이트 소개</p> -->
+        </div>
+
+    </section>
+
+    <section class="game-list">
+        <div class="game card-columns">
+            <div class="game card">
+                <img class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">근처에서 농구하실분?</h5>
+                    <div class="wrapper">
+                        <div class="profile"></div>
+                        <p style="display: inline-block;">게시자 아이디</p>
+                    </div>
+                    <div class="game_info">
+                        <p>일시 : 8월 31일 15:00</p>
+                        <p>모집 인원 : 5명</p>
+                        <p>성별 : 남자만</p>
+                        <p>이 기분을 날려버리기 위해 농구번개 한번 제안해봅니다. 괜찮으시면 놀러오세요</p>
+                    </div>
+                    <button type="button" class="game btn btn-block">참여하기</button>
+                </div>
+            </div>
+            <div class="game card">
+                <img class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">근처에서 농구하실분?</h5>
+                    <div class="wrapper">
+                        <div class="profile"></div>
+                        <p style="display: inline-block;">게시자 아이디</p>
+                    </div>
+                    <div class="game_info">
+                        <p>일시 : 8월 31일 15:00</p>
+                        <p>모집 인원 : 5명</p>
+                        <p>성별 : 남자만</p>
+                        <p>이 기분을 날려버리기 위해 농구번개 한번 제안해봅니다. 괜찮으시면 놀러오세요</p>
+                    </div>
+                    <button type="button" class="game btn btn-block">참여하기</button>
+                </div>
+            </div>
+            <div class="game card">
+                <img class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">근처에서 농구하실분?</h5>
+                    <div class="wrapper">
+                        <div class="profile"></div>
+                        <p style="display: inline-block;">게시자 아이디</p>
+                    </div>
+                    <div class="game_info">
+                        <p>일시 : 8월 31일 15:00</p>
+                        <p>모집 인원 : 5명</p>
+                        <p>성별 : 남자만</p>
+                        <p>이 기분을 날려버리기 위해 농구번개 한번 제안해봅니다. 괜찮으시면 놀러오세요</p>
+                    </div>
+                    <button type="button" class="game btn btn-block">참여하기</button>
+                </div>
+            </div>
+            <div class="game card">
+                <img class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">근처에서 농구하실분?</h5>
+                    <div class="wrapper">
+                        <div class="profile"></div>
+                        <p style="display: inline-block;">게시자 아이디</p>
+                    </div>
+                    <div class="game_info">
+                        <p>일시 : 8월 31일 15:00</p>
+                        <p>모집 인원 : 5명</p>
+                        <p>성별 : 남자만</p>
+                        <p>이 기분을 날려버리기 위해 농구번개 한번 제안해봅니다. 괜찮으시면 놀러오세요</p>
+                    </div>
+                    <button type="button" class="game btn btn-block">참여하기</button>
+                </div>
+            </div>
+            <div class="game card">
+                <img class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">근처에서 농구하실분?</h5>
+                    <div class="wrapper">
+                        <div class="profile"></div>
+                        <p style="display: inline-block;">게시자 아이디</p>
+                    </div>
+                    <div class="game_info">
+                        <p>일시 : 8월 31일 15:00</p>
+                        <p>모집 인원 : 5명</p>
+                        <p>성별 : 남자만</p>
+                        <p>이 기분을 날려버리기 위해 농구번개 한번 제안해봅니다. 괜찮으시면 놀러오세요</p>
+                    </div>
+                    <button type="button" class="game btn btn-block">참여하기</button>
+                </div>
+            </div>
+            <div class="game card">
+                <img class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">근처에서 농구하실분?</h5>
+                    <div class="wrapper">
+                        <div class="profile"></div>
+                        <p style="display: inline-block;">게시자 아이디</p>
+                    </div>
+                    <div class="game_info">
+                        <p>일시 : 8월 31일 15:00</p>
+                        <p>모집 인원 : 5명</p>
+                        <p>성별 : 남자만</p>
+                        <p>이 기분을 날려버리기 위해 농구번개 한번 제안해봅니다. 괜찮으시면 놀러오세요</p>
+                    </div>
+                    <button type="button" class="game btn btn-block">참여하기</button>
+                </div>
+            </div>
+        </div>
+        <p><a href="#" class="show-more">자세히 보기</a></p>
+    </section>
+
+
+    <section class="invite-join">
+        <div class="invite-join-text-wrapper">
+            <div class="subtitle-text">대충 있어보이는 한 줄</div>
+            <div class="detail-text">
+                트고, 것은 든 이상의 가장 청춘에서만 수 이성은 뿐이다. <br>
+                    충분히 같으며, 실현에 우는 영락과 반짝이는 것이다. 위하여, 옷을 목숨이 가장 있으랴?
+            </div>
+            <a href="register.html">
+                <div class="join-btn-wrapper">
+                    <div class="join-btn">가입하기</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
