@@ -87,28 +87,34 @@ table {
 .clubName{
     width: 80%;
     height: 50px;
-    border: 1px solid lightblue;
+    border: 1px solid #55ddff;
 }
 
-.address{
+.address-box{
     width: 80%;
-    height: 50px;
-    border: 1px solid lightblue;
+    border: 1px solid #55ddff;
+    margin-left: 20px;
 }
 
 
 .ex{
     width: 80%;
-    border: 1px solid lightblue;
+    border: 1px solid #55ddff;
     height: 220px;
 }
 
 .box{
-    border-bottom: 1px solid lightblue;
+    border-bottom: 1px solid #55ddff;
     height: 40px;
     width: 40px;
 }
 
-
+#member{
+    width: 80%;
+    height: 150px;
+    display: none;
+    border: 1px solid #55ddff;
+    margin-left: 20px;
+}
 
 

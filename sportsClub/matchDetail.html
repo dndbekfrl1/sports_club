@@ -8,43 +8,136 @@
     <link href="css/match-detail.css" rel="stylesheet">
 
     <!--리액트 컴포넌트 추가 -->
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    <script src="like_button.js"></script>
+<!--
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin />
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin />
+    <script src="like_button.js" />
+-->
+
+    <script>
+        function loginPopup(){
+            const pop = document.getElementById('login');
+            pop.style.display='block';
+        }
+
+        function loginClose(){
+            const pop = document.getElementById('login');
+            pop.style.display="none";
+        }
+
+
+        function menuPopup(){
+            const menu = document.getElementById('menu');
+            menu.style.display='block';
+        }
+
+        function menuClose(){
+            const menu = document.getElementById('menu');
+            menu.style.display='none';
+        }
+
+
+
+
+
+
+
+        function goBack(){
+            window.history.back();
+        }
+
+        function addressToggle(){
+            let ck = document.getElementById('ck');
+            console.log(ck.value);
+            if(ck.value == 'down'){
+                let address = document.getElementById('address');
+                address.style.display='block';
+                ck.style.backgroundImage='url(img/up.png)';
+                ck.value ='up';
+            }else if(ck.value == 'up'){
+                let address = document.getElementById('address');
+                address.style.display='none';
+                ck.style.backgroundImage='url(img/down.png)';
+                ck.value ='down';
+            }
+
+        }
+
+
+    </script>
 </head>
 <body>
 
-    <div class="header">
-        <div class="nav">
-            <ul class="nonStyle">
-                <li class="headList"><img src="img/menuBar.png" class="menuImg"></li>
-                <li class="headList"><a>경기 검색</a></li>
-                <li class="headList"><a>동아리 검색</a></li>
-            </ul>
-        </div>
-        <div class="headTitle">TITLE</div>
-        <div class="right">
-            <ul class="nonStyle textRight">
-                <li class="headList"><a>회원가입</a></li>
-                <li class="headList"><a>로그인</a></li>
-            </ul>
+
+<div class="header">
+    <div class="nav">
+        <ul class="nonStyle">
+            <li class="headList"><img onclick="menuPopup()" src="img/menuBar.png" class="menuImg"></li>
+            <li class="headList"><a href="matchSelection.html">경기 검색</a></li>
+            <li class="headList"><a href="search-club.html">동아리 검색</a></li>
+        </ul>
+    </div>
+    <div class="headTitle"><a href="main.html">TITLE</a></div>
+    <div class="right">
+        <ul class="nonStyle textRight">
+            <li class="headList"><a href="register.html">회원가입</a></li>
+            <li class="headList" onclick="loginPopup()">로그인</li>
+        </ul>
+    </div>
+</div>
+<!--메뉴창 팝업-->
+<div class="header-menu" id="menu">
+    <div class="menu-title">SITEMAP</div>
+    <div id="menu-close" onclick="menuClose()"></div>
+    <ul>
+        <ul class="ul-sort">
+            <li class="menu-list"><a href="matchSelection.html">경기 검색</a></li>
+            <li class="menu-list"><a href="recruitment.html">경기 등록</a></li>
+        </ul>
+        <ul class="ul-sort">
+            <li class="menu-list"><a href="search-club.html">동아리 검색</a></li>
+            <li class="menu-list"><a href="clubRegistration.html">동아리 등록</a></li>
+        </ul>
+        <ul class="ul-sort">
+            <li class="menu-list"><a href="mypage.html">내 정보</a></li>
+            <li class="menu-list"><a href="chatpage.html">채팅방</a></li>
+        </ul>
+    </ul>
+</div>
+
+
+<!--로그인 팝업-->
+<div class="pullSize" id="login" style="display: none;">
+    <div class="loginPopup">
+        <div class="loginHeader"><h2>Login Popup</h2></div>
+        <div class="loginData">
+            <form method="post" name="loginForm">
+                <input name="userid" maxlength="20"
+                       type="text" placeholder="아이디" title="아이디를 입력하세요"
+                       class="inputID">
+                <input name="userpw" maxlength="20" type="password"
+                       placeholder="비밀번호" title="비밀번호를 입력하세요" class="inputPW">
+                <input type="submit" id="loginSubmit" onclick="loginClose()" value="로그인" class="loginButton">
+            </form>
+            <div class="popupLink">
+                <a href="#" title="ID/PW 찾기 선택">ID/PW 찾기</a>
+                <span> | </span>
+                <a href="register.html" title="회원가입 선택">회원가입</a>
+            </div>
         </div>
     </div>
-
+</div>
     <div class="wrapper">
         <div class="content">
-
             <div class="listTitle"><p>중랑구 중랑천 농구코트 인원모집!</p></div>
-            <div class="address"><p>서울특별시 중랑구 중화동 중랑천 농구코트</p></div>
+            <div class="address"><p>서울특별시 중랑구 중화동 중랑천 농구코트</p><button class="address-toggle" id="ck" onclick="addressToggle()" value="down">down</button></div>
+            <div class="address-detail" id="address"></div>
             <div class="timeBar"><p>2020년 10월 1일</p><p>20:00~22:00</p></div>
             <div class="imgDiv"><div class="inputImg"></div></div>
             <div class="detail"><p>[게스트][5명 모집][성별무관] 키2m이상 패스할줄 아는 센터 5명 구합니다 물은 각자 챙겨오시면 됩니다.</p></div>
-            
-            <button class="historyBack">돌아가기</button>
+            <button class="participation" onclick="">참가하기</button>
+            <button class="historyBack" onclick="goBack()">돌아가기</button>
         </div>
-
     </div>
-
-
 </body>
 </html>

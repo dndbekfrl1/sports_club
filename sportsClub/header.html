@@ -1,38 +1,81 @@
+<script>
+    function loginPopup(){
+        const pop = document.getElementById('login');
+        pop.style.display='block';
+    }
+
+    function loginClose(){
+        const pop = document.getElementById('login');
+        pop.style.display="none";
+    }
+
+    function menuPopup(){
+        const menu = document.getElementById('menu');
+        menu.style.display='block';
+    }
+
+    function menuClose(){
+        const menu = document.getElementById('menu');
+        menu.style.display='none';
+    }
+
+</script>
+
 <div class="header">
     <div class="nav">
         <ul class="nonStyle">
-            <li class="headList"><img src="images/menuBar.png" class="menuImg"></li>
-            <li class="headList"><a>경기 검색</a></li>
-            <li class="headList"><a>동아리 검색</a></li>
+            <li class="headList"><img onclick="menuPopup()" src="img/menuBar.png" class="menuImg"></li>
+            <li class="headList"><a href="matchSelection.html">경기 검색</a></li>
+            <li class="headList"><a href="search-club.html">동아리 검색</a></li>
         </ul>
     </div>
-    <div class="headTitle">TITLE</div>
+    <div class="headTitle"><a href="main.html">TITLE</a></div>
     <div class="right">
         <ul class="nonStyle textRight">
-            <li class="headList"><a>회원가입</a></li>
-            <li class="headList"><a>로그인</a></li>
+            <li class="headList"><a href="register.html">회원가입</a></li>
+            <li class="headList" onclick="loginPopup()">로그인</li>
         </ul>
     </div>
 </div>
+<!--메뉴창 팝업-->
+<div class="header-menu" id="menu">
+    <div class="menu-title">SITEMAP</div>
+    <div id="menu-close" onclick="menuClose()"></div>
+    <ul>
+        <ul class="ul-sort">
+            <li class="menu-list"><a href="matchSelection.html">경기 검색</a></li>
+            <li class="menu-list"><a href="recruitment.html">경기 등록</a></li>
+        </ul>
+        <ul class="ul-sort">
+            <li class="menu-list"><a href="search-club.html">동아리 검색</a></li>
+            <li class="menu-list"><a href="clubRegistration.html">동아리 등록</a></li>
+        </ul>
+        <ul class="ul-sort">
+            <li class="menu-list"><a href="mypage.html">내 정보</a></li>
+            <li class="menu-list"><a href="chatpage.html">채팅방</a></li>
+        </ul>
+    </ul>
+</div>
+
+
 <!--로그인 팝업-->
-<div class="pullSize" style="display: none;">
+<div class="pullSize" id="login" style="display: none;">
     <div class="loginPopup">
         <div class="loginHeader"><h2>Login Popup</h2></div>
         <div class="loginData">
             <form method="post" name="loginForm">
                 <input name="userid" maxlength="20"
-                    type="text" placeholder="아이디" title="아이디를 입력하세요"
-                    class="inputID">
+                       type="text" placeholder="아이디" title="아이디를 입력하세요"
+                       class="inputID">
                 <input name="userpw" maxlength="20" type="password"
-                    placeholder="비밀번호" title="비밀번호를 입력하세요" class="inputPW">
-                <input type="submit" id="loginSubmit" value="로그인" class="loginButton">
+                       placeholder="비밀번호" title="비밀번호를 입력하세요" class="inputPW">
+                <input type="submit" id="loginSubmit" onclick="loginClose()" value="로그인" class="loginButton">
             </form>
             <div class="popupLink">
                 <a href="#" title="ID/PW 찾기 선택">ID/PW 찾기</a>
                 <span> | </span>
-                <a href="#" title="회원가입 선택">회원가입</a>
+                <a href="register.html" title="회원가입 선택">회원가입</a>
             </div>
         </div>
     </div>
 </div>
-<!---->

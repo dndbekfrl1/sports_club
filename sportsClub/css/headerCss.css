@@ -8,7 +8,11 @@
     position: relative;
     border-bottom: 2px solid black;
     background-color: #55ddff;
-    /* #55ddff;*/
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .header ::after {
@@ -128,4 +132,48 @@ ul.textRight {
 .popupLink {
     display: block;
     text-align: center;
+}
+
+/*메뉴 팝업창*/
+.header-menu{
+    display: none;
+    width: 100%;
+    position: relative;
+    z-index: 1111;
+    height: 700px;
+    background-color: #fbfcfc;
+}
+
+.menu-title{
+    padding: 20px 0 0 20px;
+    font-size: 1.6em;
+    display: block;
+}
+
+li.menu-list{
+    list-style: none;
+    margin : 5px 0 5px 0;
+    font-size: 1.2em;
+}
+
+
+.ul-sort{
+    float: left;
+    margin: 20px 40px 10px 40px;
+    padding: 0;
+}
+
+.ul-sort::after{
+    content: "";
+    clear: both;
+}
+
+#menu-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-image: url("../img/close.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
 }

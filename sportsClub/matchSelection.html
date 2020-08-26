@@ -6,9 +6,106 @@
     <title>경기 선택</title>
     <link href="css/headerCss.css" rel="stylesheet">
     <link href="css/match-selection.css" rel="stylesheet">
+
+    <script>
+        let sportList=['billiards', 'volleyball', 'baseball', 'basketball', 'bowling', 'football', 'tennisball', 'tableTennis'];
+
+        function sportSelection(){
+
+            let ck = document.getElementsByClassName('selectionWindow')[0];
+
+            for (let i=7;i<22;i++){
+                if(i%2==0){
+                    continue;
+                }
+
+                let num = (i-7)/2;
+                let imgName = 'url(img/'+sportList[num]+'.png)';
+                switch (num){
+                    case 0 :
+                        ck.childNodes[i].style.bottom='150px';
+                        ck.childNodes[i].style.left='-180px';
+                        ck.childNodes[i].style.display='none';
+                        break;
+                    case 1 :
+                        ck.childNodes[i].style.bottom='40px';
+                        ck.childNodes[i].style.left='0px';
+                        break;
+                    case 2 :
+                        ck.childNodes[i].style.bottom='5px';
+                        ck.childNodes[i].style.left='180px';
+                        break;
+                    case 3 :
+                        ck.childNodes[i].style.bottom='-20px';
+                        ck.childNodes[i].style.left='360px';
+                        break;
+                    case 4 :
+                        ck.childNodes[i].style.bottom='-20px';
+                        ck.childNodes[i].style.left='540px';
+                        break;
+                    case 5 :
+                        ck.childNodes[i].style.bottom='5px';
+                        ck.childNodes[i].style.left='720px';
+                        break;
+                    case 6 :
+                        ck.childNodes[i].style.bottom='40px';
+                        ck.childNodes[i].style.left='900px';
+                        break;
+                    case 7 :
+                        ck.childNodes[i].style.bottom='150px';
+                        ck.childNodes[i].style.left='1080px';
+                        ck.childNodes[i].style.display='none';
+                        break;
+                }
+
+                ck.childNodes[i].style.backgroundImage=imgName;
+                ck.childNodes[i].id=sportList[num];
+            }
+        };
+
+        window.onload=function (){
+            sportSelection();
+        };
+
+        function leftMove(){
+            //애니메이션 각각 만들어서 반복문으로 클래스 추가..
+
+
+            //배열 한칸씩 옆으로
+            let length = sportList.length-1;
+            let temp = sportList[length];
+            console.log(sportList);
+            for(let i=length; i>0;i--){
+                sportList[i]=sportList[i-1];
+            }
+            sportList[0]=temp;
+            console.log(sportList);
+
+            //함수 재시작
+            sportSelection();
+        };
+
+        function rightMove(){
+            //애니메이션 각각 만들어서 반복문으로 클래스 추가..
+
+
+            //배열 한칸씩 옆으로
+            let length = sportList.length-1;
+            let temp = sportList[length];
+            console.log(sportList);
+            for(let i=length; i>0;i--){
+                sportList[i]=sportList[i-1];
+            }
+            sportList[0]=temp;
+            console.log(sportList);
+
+            //함수 재시작
+            sportSelection();
+        };
+
+    </script>
 </head>
 <body>
-
     <div class="header">
         <div class="nav">
             <ul class="nonStyle">
@@ -55,7 +152,7 @@
                     <div class="textBar">
                         <p>장소 입력 후 확인을 눌러주세요!</p>
                     </div>
-                
+
                     <div class="selectBar">
                         <div class="addressBar">
                             <div class="mapImg"></div>
@@ -65,29 +162,16 @@
                         <div class="timeBar" style="display: none;"><input type="date"><input type="datetime"></div>
                     </div>
 
-                    <div class="leftDirection"></div>
-                    <div class="sportCircle" style="bottom: 100px; left: -180px; display: none;"></div>
-                    <div class="sportCircle" style="bottom: 40px; left: 0px; background-image: url('img/volleyball.png');">
-                        <!-- <p>배구</p> -->
-                    </div>
-                    <div class="sportCircle" style="bottom: 5px; left: 180px; background-image: url('img/baseball.png');">
-                        <!-- <p>야구</p> -->
-                    </div>
-                    <div class="sportCircle" style="bottom: -20px; left: 360px; background-image: url('img/basketball.png');">
-                        <!-- <p>농구</p> -->
-                    </div>
-                    <div class="sportCircle" style="bottom: -20px; left: 540px; background-image: url('img/bowling.png');">
-                        <!-- <p>볼링</p> -->
-                    </div>
-                    <div class="sportCircle" style="bottom: 5px; left: 720px; background-image: url('img/football.png');">
-                        <!-- <p>축구</p> -->
-                    </div>
-                    <div class="sportCircle" style="bottom: 40px; left: 900px; background-image: url('img/tennisball.png');">
-                        <!-- <p>테니스</p> -->
-                    </div>
-                    <div class="sportCircle" style="bottom: 100px; left: 1080px; display: none;"></div>
-                    <div class="rightDirection"></div>
-                
+                    <div class="leftDirection" onclick="leftMove()"></div>
+                    <div class="sportCircle"></div>
+                    <div class="sportCircle"></div>
+                    <div class="sportCircle"></div>
+                    <div class="sportCircle"></div>
+                    <div class="sportCircle"></div>
+                    <div class="sportCircle"></div>
+                    <div class="sportCircle"></div>
+                    <div class="sportCircle"></div>
+                    <div class="rightDirection" onclick="rightMove()"></div>
             </div>
         </div>
         <div class="sportList">
@@ -106,7 +190,7 @@
                             <p>[남자][번개][5명]</p> 
                             <!--구력 3년 이상에 이기적이지 않고 승부욕 너무 강하지 않는 분들로 모집합니다. 게스트 비용은 없습니다. 각자 물 챙겨주세요!-->
                         </div>
-                        <a href="#">상세 보기</a>
+                        <a href="matchDetail.html">상세 보기</a>
                     </li>
                     <li class="smallList">
                         <div class="listTitle">체육공원에서 농구하실 분!
@@ -121,7 +205,7 @@
                             <p>[남자][번개][5명]</p> 
                             <!--구력 3년 이상에 이기적이지 않고 승부욕 너무 강하지 않는 분들로 모집합니다. 게스트 비용은 없습니다. 각자 물 챙겨주세요!-->
                         </div>
-                        <a href="#">상세 보기</a>
+                        <a href="matchDetail.html">상세 보기</a>
                     </li>
                     <li class="smallList">
                         <div class="listTitle">체육공원에서 농구하실 분!
@@ -136,7 +220,7 @@
                             <p>[남자][번개][5명]</p> 
                             <!--구력 3년 이상에 이기적이지 않고 승부욕 너무 강하지 않는 분들로 모집합니다. 게스트 비용은 없습니다. 각자 물 챙겨주세요!-->
                         </div>
-                        <a href="#">상세 보기</a>
+                        <a href="matchDetail.html">상세 보기</a>
                     </li>
                     <li class="smallList">
                         <div class="listTitle">체육공원에서 농구하실 분!
@@ -151,7 +235,7 @@
                             <p>[남자][번개][5명]</p> 
                             <!--구력 3년 이상에 이기적이지 않고 승부욕 너무 강하지 않는 분들로 모집합니다. 게스트 비용은 없습니다. 각자 물 챙겨주세요!-->
                         </div>
-                        <a href="#">상세 보기</a>
+                        <a href="matchDetail.html">상세 보기</a>
                     </li>
                     <li class="smallList">
                         <div class="listTitle">체육공원에서 농구하실 분!
@@ -166,12 +250,18 @@
                             <p>[남자][번개][5명]</p> 
                             <!--구력 3년 이상에 이기적이지 않고 승부욕 너무 강하지 않는 분들로 모집합니다. 게스트 비용은 없습니다. 각자 물 챙겨주세요!-->
                         </div>
-                        <a href="#">상세 보기</a>
+                        <a href="matchDetail.html">상세 보기</a>
                     </li>
                 </ul>
             </div>
         </div>
-
     </div>
+
+<!--    <div id="test1"></div>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="js/test.js" />-->
+
 </body>
 </html>
