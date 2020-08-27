@@ -20,12 +20,10 @@ function addressToggle(){
     if(ck.value == 'down'){
         let address = document.getElementById('address');
         address.style.display='block';
-        ck.style.backgroundImage='url(img/up.png)';
         ck.value ='up';
     }else if(ck.value == 'up'){
         let address = document.getElementById('address');
         address.style.display='none';
-        ck.style.backgroundImage='url(img/down.png)';
         ck.value ='down';
     }
 
