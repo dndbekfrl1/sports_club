@@ -1,11 +1,32 @@
-$(document).ready(function(){
-    $(".btn_button").click(function(){
-        var submenu = $(this).next("ul");
-            // submenu 가 화면상에 보일때는 위로 보드랍게 접고 아니면 아래로 보드랍게 펼치기
-            if( submenu.is(":visible") ) {
-                submenu.slideUp();
-            } else {
-                submenu.slideDown();
-            }
-    });
-});
+function noticeToggle(){
+    let ck = document.getElementById('notbtn');
+    console.log(ck.value);
+    if(ck.value == 'down') {
+        let noticetext = document.getElementsByClassName('noticetext');
+        noticetext.style.display='block';
+        ck.value ='up';
+    }
+    else if(ck.value == 'up') {
+        let noticetext = document.getElementsByClassName('noticetext');
+        noticetext.style.display='none';
+        ck.value ='down';
+    }
+
+}
+
+function addressToggle(){
+    let ck = document.getElementById('ck');
+    console.log(ck.value);
+    if(ck.value == 'down'){
+        let address = document.getElementById('address');
+        address.style.display='block';
+        ck.style.backgroundImage='url(img/up.png)';
+        ck.value ='up';
+    }else if(ck.value == 'up'){
+        let address = document.getElementById('address');
+        address.style.display='none';
+        ck.style.backgroundImage='url(img/down.png)';
+        ck.value ='down';
+    }
+
+}
