@@ -31,18 +31,19 @@ main{
 	vertical-align:top;
 }
 
-aside ul { /*스크롤바*/
+aside ul { 
 	padding-left:0;
 	margin:0;
 	list-style-type:none;
-	overflow-y:scroll;
+	overflow-y:scroll; /*스크롤바*/
 	height:630px;
 }
 aside li{
+	cursor:pointer;
 	padding:10px 0;
 }
 aside li:hover{ /*마우스 올렸을 때 변하는색*/
-  background-color: skyblue
+	background-color: skyblue
 }
 h2,h3{
 	margin:0;
@@ -89,59 +90,66 @@ aside li h3{
 	margin-left:7px;
 }
 
-.chatheader{
+.chatcontainer {
+	display: block;
+}
+.chatcontainer2 {
+	display: none;
+}
+
+
+.chatheader1{
 	background-color:#D5D5D5;
 	width: 500px;
 	height: 80px;
 	display:inline-block;
 	vertical-align:top;
 }
-.chatheader img {
-	width:50px;
-	border-radius:50%;
-}
-.chatheader div{
-	margin-left:15px;
+.chatheader1 div{
+	margin-left:200px;
 	margin-right:100px;
 }
-.chatheader h2{
+.chatheader1 h2{
+	margin-top: 15px;
 	font-size:16px;
 	margin-bottom:5px;
 }
-.chatheader h3{
+.chatheader1 h3{
 	font-size:14px;
 	font-weight:normal;
 	color:#7e818a;
 }
 
 .notice {
-	height: 60px;
+	height: 70px;
 	margin-left: 30px;
 	margin-right: 30px;
 	margin-bottom: 10px;
 	border-bottom: 1px solid;
 }
-.noticetext {
+.noticehead {
 	font-size: 15px;
-	padding-top: 10px;
+	width: 320px;
 	padding-bottom: 8px;
+	position: relative;
 }
 .btn_notice {
-	top: 100px;
-	left: 660px;
-	position: absolute;
+	top: 20px;
+	left: 350px;
+	position: relative;
 	border-radius: 30%;
 	padding: 5px 5px 5px 5px;
 	background-color: #d5d5d5;
 	border: 1px solid #a8a8a8;
 	cursor: pointer;
+	z-index: 100px;
 }
-.notice .hide {
+.noticetext {
 	display: none;
 }
 
 .map {
-	min-height: 50px;
+	min-height: 150px;
 	margin-top: 10px;
 	margin-left:30px;
 	margin-right:30px;
@@ -149,17 +157,24 @@ aside li h3{
 }
 .maptext {
 	padding-top: 5px;
+	width: 320px;
 }
 .btn_map {
-	top: 160px;
-	left: 660px;
-	position: absolute;
+	top: 10px;
+	left: 350px;
+	position: relative;
 	border-radius: 30%;
 	padding: 5px 5px 5px 5px;
 	background-color: #d5d5d5;
 	border: 1px solid #a8a8a8;
 	cursor: pointer;
+	z-index: 100px;
 
+}
+.address-detail{
+    width: 85%;
+    height: 200px;
+    display: none;
 }
 
 #chat{
@@ -174,8 +189,6 @@ aside li h3{
 }
 #chat li{
 	padding:20px 30px;
-	
-
 }
 #chat h2,#chat h3{
 	display:inline-block;
@@ -221,11 +234,32 @@ aside li h3{
 		margin-left:375px;
 }
 
-.sendbox{
-	top: 508px;
-	left: 260px;
-	position: absolute;
+.chatheader2{
+	background-color:#D5D5D5;
 	width: 500px;
+	height: 80px;
+	display:inline-block;
+	vertical-align:top;
+}
+.chatheader2 div{
+	margin-left:200px;
+	margin-right:100px;
+}
+.chatheader2 h2{
+	font-size:16px;
+	margin-bottom:5px;
+}
+.chatheader2 h3{
+	font-size:14px;
+	font-weight:normal;
+	color:#7e818a;
+}
+
+.sendbox{
+	top: 590px;
+	left: 661px;
+	position: absolute;
+	width: 490px;
 	height:120px;
 	border-radius:3px;
 	padding:20px 20px 10px 20px;
