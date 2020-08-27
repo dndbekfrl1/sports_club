@@ -25,7 +25,7 @@
     <div id="container">
   	<aside>
   		<ul>
-			<li>
+			<li id="talk1" class="on">
 				<img src="img/man1.png" alt="">
 				<div>
 					<h2>축구/은평롯데몰/8월23일</h2>
@@ -35,7 +35,7 @@
 					</h3>
 				</div>
 			</li>
-			<li>
+			<li id="talk2">
 				<img src="img/man1.png" alt="">
 				<div>
 					<h2>농구/한강공원/8월25일</h2>
@@ -46,73 +46,140 @@
 				</div>
 			</li>
   		</ul>
-  	</aside>
+	  </aside>
+	  
   	<main>
-      <div class="chatheader">
-  			<img src="" alt="">
-  			<div>
-  				<h2>축구 톡방</h2>
-  				<h3>방장: 신짱구</h3>
-  			</div>
-  			<img src="" alt="">
+      <div class="chatcontainer">
+		<div id="headercon1" class="chatheader1">
+			<div>
+				<h2>축구 톡방</h2>
+				<h3>방장: 어피치</h3>
+			</div>
+	  	</div>
+		<ul id="chat">
+			<div class="notice">
+				<button type="button" class="btn_notice" id="notbtn" onclick="noticetoggle()" value="down">
+				접기
+				</button>
+				<div class="noticehead">[공지사항]</div>
+				<div class="noticetext">
+					8월 30일 일요일 17시<br>
+					준비물: 축구화
+				</div> 
+			</div>
+
+			<div class="map">
+				<div class="maptext">지도영역</div>
+					<button type="button" class="btn_map" id="maptbtn" onclick="addresstoggle()" value="down">
+					접기
+					</button>
+					<div class="address-detail" id="address"></div>
+			</div>
+			
+			<li class="you">
+				<div class="entete">
+					<span class="status green"></span>
+					<h2>축구 톡방장 어피치</h2>
+					<h3>10:12AM, Today</h3>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+					5시까지 오시면 됩니다
+				</div>
+			</li>
+			<li class="me">
+				<div class="entete">
+					<h3>10:12AM, Today</h3>
+					<h2>me</h2>
+					<span class="status blue"></span>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+					아아아아아ㅏ 네네네ㅔ네네ㅔ
+				</div>
+			</li>
+			<li class="me">
+				<div class="entete">
+					<h3>10:12AM, Today</h3>
+					<h2>me</h2>
+					<span class="status blue"></span>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+					알겠습니다~
+				</div>
+			</li>
+		</ul>
+	  </div>
+
+	<div class="chatcontainer2" >
+	<div id="headercon2" class="chatheader2">
+		<img src="" alt="">
+		<div>
+			<h2>농구 톡방</h2>
+			<h3>방장: 라이언</h3>
+		</div>
+		<img src="" alt="">
+		</div>
+		<ul id="chat">
+		<div class="notice">
+			<button type="button" class="btn_notice">접기</button>
+			<div class="noticetext">
+				[공지사항]
+				<ul class="hide">
+					<li>8월 30일 일요일 17시</li>
+					<li>준비물: 개인물통 등 소지품</li>
+				</ul> 
+			</div>
 		</div>
 
-  		<ul id="chat">
-			<div class="notice">
-				<button type="button" class="btn_notice">접기</button>
-				<div class="noticetext">
-					[공지사항]
-					<ul class="hide">
-						<li>8월 30일 일요일 17시</li>
-						<li>준비물: 축구화</li>
-					</ul> 
+			<div class="map">
+			<div class="maptext">지도영역</div>
+			<button type="button" class="btn_map">접기</button>
+			</div>
+			
+			<li class="you">
+				<div class="entete">
+					<span class="status green"></span>
+					<h2>농구 톡방장 라이언</h2>
+					<h3>10:12AM, Today</h3>
 				</div>
-			  </div>
+				<div class="triangle"></div>
+				<div class="message">
+					5시까지 오시면 됩니다
+				</div>
+			</li>
+			<li class="me">
+				<div class="entete">
+					<h3>10:12AM, Today</h3>
+					<h2>me</h2>
+					<span class="status blue"></span>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+					아아아아아ㅏ 네네네ㅔ네네ㅔ
+				</div>
+			</li>
+			<li class="me">
+				<div class="entete">
+					<h3>10:12AM, Today</h3>
+					<h2>me</h2>
+					<span class="status blue"></span>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+					알겠습니다~
+				</div>
+			</li>
+		</ul>
+	</div>
+	  </div>
 
-			  <div class="map">
-				<div class="maptext">지도영역</div>
-				<button type="button" class="btn_map">접기</button>
-			  </div>
-			  
-  			<li class="you">
-  				<div class="entete">
-  					<span class="status green"></span>
-  					<h2>축구 톡방장 신짱구</h2>
-  					<h3>10:12AM, Today</h3>
-  				</div>
-  				<div class="triangle"></div>
-  				<div class="message">
-  					3시까지 뚝섬 한강공원으로 오시면 됩니다
-  				</div>
-  			</li>
-  			<li class="me">
-  				<div class="entete">
-  					<h3>10:12AM, Today</h3>
-  					<h2>me</h2>
-  					<span class="status blue"></span>
-  				</div>
-  				<div class="triangle"></div>
-  				<div class="message">
-  					아아아아아ㅏ 네네네ㅔ네네ㅔ
-  				</div>
-  			</li>
-  			<li class="me">
-  				<div class="entete">
-  					<h3>10:12AM, Today</h3>
-  					<h2>me</h2>
-  					<span class="status blue"></span>
-  				</div>
-  				<div class="triangle"></div>
-  				<div class="message">
-  					알겠습니다~
-  				</div>
-  			</li>
-  		</ul>
 		<div class="sendbox">
 			<textarea placeholder="Type your message"></textarea>
   			<a href="#">Send</a>
 		</div>
-  		
+		  
   	</main>
 	</div>
 	<footer>
